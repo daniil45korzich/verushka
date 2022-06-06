@@ -1,0 +1,54 @@
+/* FONTS */
+@font-face {
+    font-family: 'P22UndergroundCYProBook';
+    src: local('P22UndergroundCYPro-Book'),
+    url('../fonts/P22UndergroundCYPro-Book.woff') format('woff');
+}
+
+/* MAIN */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'P22UndergroundCYProBook';
+}
+
+.container{
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+body,
+html{
+    padding:0;
+    margin:0;
+}
+
+/* HEADER */
+
+/* BANNER */
+.bannerSlider {
+    width: 100%;
+    height: 100%;
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+      } 
+}
+
+/* FOOTER */
