@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+
+    <link href="css/normalize.min.css" type="text/css" rel="stylesheet">
+    <link href="css/swiper-bundle.min.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <style>
+        .swiper {
+            width: 100%;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .mySwiper2 {
+            height: 80%;
+            width: 100%;
+        }
+
+        .mySwiper {
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+
+        .mySwiper .swiper-slide {
+            width: 25%;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .mySwiper .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header-top header__top">
+            <div class="header-top__lang header-top-lang">
+                <div class="header-top-lang__item">ru</div>
+                <div class="header-top-lang__item">en</div>
+                <div class="header-top-lang__item">zh</div>
+            </div>
+            <div class="header-top__logo">
+                <a href="#">
+                    <img src="img/main/logo-header.svg">
+                </a>
+            </div>
+            <div class="header-top__icons header-top-icons">
+                <div class="header-top-icons__search">
+                    <img src="img/main/icon-search.png">
+                </div>
+                <div class="header-top-icons__wishlist">
+                    <a href="#">
+                        <img src="img/main/icon-wishlist.png">
+                    </a>
+                </div>
+                <div class="header-top-icons__cart">
+                    <a href="#">
+                        <img src="img/main/icon-cart.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom header__bottom">
+            <nav class="header-bottom__nav">
+                <ul class="header-bottom__list header-bottom-list">
+                    <li class="header-bottom-list__item"><a href="#" class="header-bottom-list__link">Каталог</a></li>
+                    <li class="header-bottom-list__item"><a href="#" class="header-bottom-list__link">О нас</a></li>
+                    <li class="header-bottom-list__item"><a href="#" class="header-bottom-list__link">Коллекция</a></li>
+                    <li class="header-bottom-list__item"><a href="#" class="header-bottom-list__link">Полезная информация</a></li>
+                    <li class="header-bottom-list__item"><a href="#" class="header-bottom-list__link">Идеи подарков</a></li>
+                    <li class="header-bottom-list__item"><a href="#" class="header-bottom-list__link header-bottom-list__link--exclusive">Exclusive</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="catalog-menu">
+        <div class="container">
+            <div class="i-catalog-menu catalog-menu_inner">
+                <div class="i-catalog-menu__column">
+                    <nav class="i-catalog-menu__wrapper w-catalog-menu">
+                        <ul class="w-catalog-menu__list w-catalog-menu__list--first catalog-menu-list">
+                            <li class="catalog-menu-list__item"><a href="#">Бижутерия</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Серебро</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Ювелирные украшения</a></li>
+                        </ul>
+                        <ul class="w-catalog-menu__list w-catalog-menu__list--middle catalog-menu-list">
+                            <li class="catalog-menu-list__item  catalog-menu-list__item--main"><a href="#">Все украшения</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Серьги</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Каффы</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Кольца</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Браслеты</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Колье</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Жемчужное колье</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Браслет на ногу</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Сеты</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Аксессуары</a></li>
+                        </ul>
+                        <ul class="w-catalog-menu__list w-catalog-menu__list--last catalog-menu-list">
+                            <li class="catalog-menu-list__item"><a href="#">Новинки</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Bestseller</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Идеи подарков</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Персонализация</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="i-catalog-menu__column">
+                    <div class="i-catalog-menu__content catalog-menu-content catalog-menu-content--active"><!--- БЛОК МОЖНО ДУБЛИРОВАТЬ --->
+                        <div class="catalog-menu-content__item menu-content-item">
+                            <a href="#">
+                                <img src="img/menu/img-sergi.jpg">
+                                <span class="menu-content-item__name">Серьги</span>
+                            </a>
+                        </div>
+                        <div class="catalog-menu-content__item menu-content-item">
+                            <a href="#">
+                                <img src="img/menu/img-kafy.jpg">
+                                <span class="menu-content-item__name">Кафы</span>
+                            </a>
+                        </div>
+                        <div class="catalog-menu-content__item menu-content-item">
+                            <a href="#">
+                                <img src="img/menu/img-kolca.jpg">
+                                <span class="menu-content-item__name">Кольца</span>
+                            </a>
+                        </div>
+                        <div class="catalog-menu-content__item menu-content-item">
+                            <a href="#">
+                                <img src="img/menu/img-braslety.jpg">
+                                <span class="menu-content-item__name">Браслеты</span>
+                            </a>
+                        </div>
+                        <div class="catalog-menu-content__item menu-content-item">
+                            <a href="#">
+                                <img src="img/menu/img-kolje.jpg">
+                                <span class="menu-content-item__name">Колье</span>
+                            </a>
+                        </div>
+                        <div class="catalog-menu-content__item menu-content-item">
+                            <a href="#">
+                                <img src="img/menu/img-kolje.jpg">
+                                <span class="menu-content-item__name">Жемчужное колье</span>
+                            </a>
+                        </div>
+                        <div class="catalog-menu-content__item menu-content-item">
+                            <a href="#">
+                                <img src="img/menu/img-braslet-na-nogu.jpg">
+                                <span class="menu-content-item__name">Браслет на ногу</span>
+                            </a>
+                        </div>
+                        <div class="catalog-menu-content__item menu-content-item">
+                            <a href="#">
+                                <img src="img/menu/img-sety.jpg">
+                                <span class="menu-content-item__name">Сеты</span>
+                            </a>
+                        </div>
+                        <div class="catalog-menu-content__item menu-content-item">
+                            <a href="#">
+                                <img src="img/menu/img-aksessuary.jpg">
+                                <span class="menu-content-item__name">Аксессуары</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="breadcrums">
+            <div class="breadcrums__item">
+                <a href="#">
+                    Главная
+                </a>
+            </div>
+            <div class="breadcrums__item">
+                <a href="#">
+                    Каталог
+                </a>
+            </div>
+            <div class="breadcrums__item">Кольцо</div>
+        </div>
+    </div>
+
+    <section class="product-single">
+        <div class="container">
+            <div class="product-single__wrapper">
+                <div class="product-single__image">
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mainSlider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/product/product-main.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/product/product-main.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/product/product-main.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/product/product-main.jpg" />
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper thumbsSlider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/product/product-main.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/product/product-main.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/product/product-main.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/product/product-main.jpg" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="product-single__view collections-item-view">
+                        <span class="collections-item-view__text">Узнать о производстве</span>
+                        <span class="ollections-item-view__arrow">
+                            <img src="img/main/icon-arrow-right.svg">
+                        </span>
+                    </a>
+                </div>
+                <div class="product-single__content product-content">
+                    <h1 class="product-content__title">Колцо с винтовым карабином с подвесками</h1>
+                    <div class="product-content__description">
+                        Колье с винтовым карабином, подвеской сердце и жемчужиной
+                    </div>
+                    <div class="product-content__option product-content-option">
+                        <div class="product-content-option__title">Размер:</div>
+                        <div class="product-content-option__item">
+                            <input type="radio" id="size-13" name="size">
+                            <label class="product-content-option__name">13</label>
+                        </div>
+                        <div class="product-content-option__item">
+                            <input type="radio" id="size-14" name="size">
+                            <label class="product-content-option__name">14</label>
+                        </div>
+                        <div class="product-content-option__item">
+                            <input type="radio" id="size-15" name="size">
+                            <label class="product-content-option__name">15</label>
+                        </div>
+                    </div>
+                    <div class="product-content__stock stock-status">Есть в наличии</div>
+                    <div class="product-content__price">3 400 ₽</div>
+                    <div class="product-content__btns">
+                        <button type="submit" class="btn btn-add-cart">Добавить в корзину</button>
+                        <a href="#">
+                            <img src="img/main/icon-wishlist.png">
+                            <span>Добавить в wishlist</span>
+                        </a>
+                    </div>
+                    <div class="product-content__hint product-content-hint">
+                        <img src="img/product/present-box.png" class="product-content-hint__image">
+                        <span class="product-content-hint__text">Намекнуть о подарке</span>
+                    </div>
+
+                    <div class="product-content__info product-content-info">
+                        <div class="product-content-info__item product-info-item product-info-item--active">
+                            <div class="product-info-item__name">Описание</div>
+                            <div class="product-info-item__icon">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="7" width="15" height="1" fill="#181818"/>
+                                    <rect x="7" y="15" width="15" height="1" transform="rotate(-90 7 15)" fill="#181818"/>
+                                </svg>
+                            </div>
+                            <div class="product-info-item__caption">
+                                Длина: 46 см<br>
+                                Застежка: винтовой карабин<br>
+                                Плетение цепи: скрепки, размер звена 21 мм<br>
+                                Материал: латунь с позолотой 18К, натуральный речной жемчуг, фианиты
+                            </div>
+                        </div>
+
+                        <div class="product-content-info__item product-info-item product-info-item--active">
+                            <div class="product-info-item__name">Детали</div>
+                            <div class="product-info-item__icon">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="7" width="15" height="1" fill="#181818"/>
+                                    <rect x="7" y="15" width="15" height="1" transform="rotate(-90 7 15)" fill="#181818"/>
+                                </svg>
+                            </div>
+                            <div class="product-info-item__caption">
+                                Коллекции: HEARTS<br>
+                                Цвет металла: Золотистый<br>
+                                Виды колье: Массивное колье<br>
+                                Материал: Массивная цепь<br>
+                                Подвески: Жемчуг<br>
+                                Застежка: Винтовой карабин с подвеской<br>
+                            </div>
+                        </div>
+                        <div class="product-content-info__item product-info-item product-info-item">
+                            <div class="product-info-item__name">Доставка</div>
+                            <div class="product-info-item__icon">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="7" width="15" height="1" fill="#181818"/>
+                                    <rect x="7" y="15" width="15" height="1" transform="rotate(-90 7 15)" fill="#181818"/>
+                                </svg>
+                            </div>
+                            <div class="product-info-item__caption">
+                                Текст
+                            </div>
+                        </div>
+                        <div class="product-content-info__item product-info-item product-info-item">
+                            <div class="product-info-item__name">Возврат</div>
+                            <div class="product-info-item__icon">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="7" width="15" height="1" fill="#181818"/>
+                                    <rect x="7" y="15" width="15" height="1" transform="rotate(-90 7 15)" fill="#181818"/>
+                                </svg>
+                            </div>
+                            <div class="product-info-item__caption">
+                                Текст
+                            </div>
+                        </div>
+                        <div class="product-content-info__item product-info-item product-info-item">
+                            <div class="product-info-item__name">Уход</div>
+                            <div class="product-info-item__icon">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="7" width="15" height="1" fill="#181818"/>
+                                    <rect x="7" y="15" width="15" height="1" transform="rotate(-90 7 15)" fill="#181818"/>
+                                </svg>
+                            </div>
+                            <div class="product-info-item__caption">
+                                Текст
+                            </div>
+                        </div>
+                        <div class="product-content-info__item product-info-item product-info-item">
+                            <div class="product-info-item__name">Гарантия</div>
+                            <div class="product-info-item__icon">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="7" width="15" height="1" fill="#181818"/>
+                                    <rect x="7" y="15" width="15" height="1" transform="rotate(-90 7 15)" fill="#181818"/>
+                                </svg>
+                            </div>
+                            <div class="product-info-item__caption">
+                                Текст
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carusel-product">
+        <div class="container">
+            <div class="title"><span class="title__caption">С этим товаром покупают</span></div>
+            <div class="swiper productListSlider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide product-item">
+                <div class="product-item__link product-item-link">
+                    <div class="product-item-link__image product-item-link-image">
+                        <a href="#"><img src="img/main/product-1.jpg"></a>
+                        <span class="product-item-link-image__wishlist">
+                                                <img src="img/main/wishlist-product-add.svg">
+                                            </span>
+                    </div>
+                    <a href="#" class="product-item-link__name">Наименование украшения</a>
+                    <div class="product-item-link__description">Золотистый, Жемчуг, Жемчуг, Нарядная база</div>
+                    <div class="product-item-link__price">3 000 ₽</div>
+                    <div class="product-item-link__btn">
+                        <button type="submit" class="btn btn-buy">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide product-item">
+                <div class="product-item__link product-item-link">
+                    <div class="product-item-link__image product-item-link-image">
+                        <a href="#"><img src="img/main/product-1.jpg"></a>
+                        <span class="product-item-link-image__wishlist">
+                                                <img src="img/main/wishlist-product-add.svg">
+                                            </span>
+                    </div>
+                    <a href="#" class="product-item-link__name">Наименование украшения</a>
+                    <div class="product-item-link__description">Золотистый, Жемчуг, Жемчуг, Нарядная база</div>
+                    <div class="product-item-link__price">3 000 ₽</div>
+                    <div class="product-item-link__btn">
+                        <button type="submit" class="btn btn-buy">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide product-item">
+                <div class="product-item__link product-item-link">
+                    <div class="product-item-link__image product-item-link-image">
+                        <a href="#"><img src="img/main/product-1.jpg"></a>
+                        <span class="product-item-link-image__wishlist">
+                                                <img src="img/main/wishlist-product-add.svg">
+                                            </span>
+                    </div>
+                    <a href="#" class="product-item-link__name">Наименование украшения</a>
+                    <div class="product-item-link__description">Золотистый, Жемчуг, Жемчуг, Нарядная база</div>
+                    <div class="product-item-link__price">3 000 ₽</div>
+                    <div class="product-item-link__btn">
+                        <button type="submit" class="btn btn-buy">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide product-item">
+                <div class="product-item__link product-item-link">
+                    <div class="product-item-link__image product-item-link-image">
+                        <a href="#"><img src="img/main/product-1.jpg"></a>
+                        <span class="product-item-link-image__wishlist">
+                                                <img src="img/main/wishlist-product-add.svg">
+                                            </span>
+                    </div>
+                    <a href="#" class="product-item-link__name">Наименование украшения</a>
+                    <div class="product-item-link__description">Золотистый, Жемчуг, Жемчуг, Нарядная база</div>
+                    <div class="product-item-link__price">3 000 ₽</div>
+                    <div class="product-item-link__btn">
+                        <button type="submit" class="btn btn-buy">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-button-next"></div>
+        <div class="product-button-prev"></div>
+    </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <div class="title"><span class="title__caption">Часто задаваемые вопросы</span></div>
+            <div class="faq__list faq-list">
+                <div class="faq-list__item faq-list-item">
+                    <div class="faq-list-item__name">Темнеет ли украшение?</div>
+                    <div class="faq-list-item__icon">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="7" width="15" height="1" fill="#181818"/>
+                            <rect x="7" y="15" width="15" height="1" transform="rotate(-90 7 15)" fill="#181818"/>
+                        </svg>
+                    </div>
+                    <div class="faq-list-item__caption">Украшение не темнеет, если за ним правильно ухаживать. Текст-заполнитель — это текст, который имеет некоторые характеристики реального...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscription">
+        <div class="container">
+            <div class="title"><div class="title__caption">Подписаться на новостную рассылку</div></div>
+            <div class="subscription__field subscription-field">
+                <input type="text" placeholder="Email" class="subscription-field__input">
+                <button>
+                    <img src="img/main/icon-arrow-right.svg">
+                </button>
+            </div>
+        </div>
+    </section>
+
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner footer-inner">
+            <div class="footer-inner__top footer-inner-top">
+                <div class="footer-inner-top__column">
+                    <div>
+                        <ul class="footer-menu">
+                            <li><a href="#">Украшения</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Коллекции</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">Идеи подарков</a></li>
+                            <li><a href="#">Exclusive</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="footer-menu">
+                            <li><a href="#">Производство</a></li>
+                            <li><a href="#">Уход</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Оферта</a></li>
+                            <li><a href="#">Для оптовых покупателей</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-inner-top__column">
+                    <div class="footer-info-block">
+                        <div class="footer-info-block__name">Адрес</div>
+                        <div class="footer-info-block__content">
+                            г. Казань, ул.Каюма Насыри, 3
+                        </div>
+                    </div>
+                    <div class="footer-info-block">
+                        <div class="footer-info-block__name">Телефон</div>
+                        <div class="footer-info-block__content">
+                            +7 987 269 03 83
+                        </div>
+                    </div>
+                    <div class="footer-info-block">
+                        <div class="footer-info-block__name">Режим работы</div>
+                        <div class="footer-info-block__content">
+                            пн-пт<br>
+                            12:00-20:00<br>
+                            сб-вс<br>
+                            13:00-19:00
+                        </div>
+                    </div>
+                    <div class="footer-info-block">
+                        <div class="footer-info-block__name">Почта</div>
+                        <div class="footer-info-block__content c-footer-info-block">
+                            info.veruschka@gmail.com
+                            <div class="c-footer-info-block__social footer-social">
+                                <div class="footer-social__item">
+                                    <a href="#"><img src="img/main/icon-telegram.png"></a>
+                                </div>
+                                <div class="footer-social__item">
+                                    <a href="#"><img src="img/main/icon-whatsapp.png"></a>
+                                </div>
+                                <div class="footer-social__item">
+                                    <a href="#"><img src="img/main/icon-pint.png"></a>
+                                </div>
+                                <div class="footer-social__item">
+                                    <a href="#"><img src="img/main/icon-vk.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-inner__bottom footer-inner-bottom">
+                <div class="footer-inner-bottom__copyright">©VERUSCHKA</div>
+                <div class="footer-inner-bottom__policy">
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/swiper-bundle.min.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+<script>
+    const thumbsSlider = new Swiper(".thumbsSlider", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+    const mainSlider = new Swiper(".mainSlider", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: thumbsSlider,
+        },
+    });
+</script>
+</body>
+</html>
