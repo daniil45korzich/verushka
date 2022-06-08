@@ -11,11 +11,11 @@
     <link href="css/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <div class="header-top header__top">
                 <div class="header-top__lang header-top-lang">
-                    <div class="header-top-lang__item">ru</div>
+                    <div class="header-top-lang__item header-top-lang__item--active">ru</div>
                     <div class="header-top-lang__item">en</div>
                     <div class="header-top-lang__item">zh</div>
                 </div>
@@ -145,43 +145,51 @@
             </div>
         </div>
     </header>
+
+
+
     <main>
         <section class="banner">
-            <div class="container">
-                <div class="banner__inner">
+            <div class="banner__inner">
                     <div class="swiper bannerSlider">
                         <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img src="img/main/banner-1.jpg">        
-                            <div class="container">
-                                <a href="#" class="link-btn">
+                          <div class="swiper-slide bannerSlider__slide">
+                            <img src="img/main/banner-1.jpg" class="bannerSlider__image">
+                            <div class="container bannerSlider__content">
+                                <a href="#" class="link-btn bannerSlider__link">
                                     <div class="link-btn__name">Каталог</div>
                                     <div class="link-btn__arrow link-arrow">
-                                        <img src="img/main/icon-arrow-right.svg" class="link-arrow__self">
+                                        <svg class="link-arrow__self" width="60" height="8" viewBox="0 0 60 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M59.7014 4.35355C59.8966 4.15829 59.8966 3.84171 59.7014 3.64645L56.5194 0.464466C56.3241 0.269204 56.0076 0.269204 55.8123 0.464466C55.617 0.659728 55.617 0.976311 55.8123 1.17157L58.6407 4L55.8123 6.82843C55.617 7.02369 55.617 7.34027 55.8123 7.53553C56.0076 7.7308 56.3241 7.7308 56.5194 7.53553L59.7014 4.35355ZM0 4.5H59.3478V3.5H0V4.5Z" fill="#181818"/>
+                                        </svg>
                                         <span class="link-arrow__circle"></span>
                                     </div>
                                 </a>
                             </div>
                           </div>
-                          <div class="swiper-slide">
-                            <img src="img/main/banner-2.jpg">        
-                            <div class="container">
-                                <a href="#" class="link-btn">
-                                    <div class="link-btn__name">Каталог</div>
-                                    <div class="link-btn__arrow link-arrow">
-                                        <img src="img/main/icon-arrow-right.svg" class="link-arrow__self">
-                                        <span class="link-arrow__circle"></span>
-                                    </div>
-                                </a>
+                            <div class="swiper-slide bannerSlider__slide">
+                                <img src="img/main/banner-2.jpg" class="bannerSlider__image">
+                                <div class="container bannerSlider__content">
+                                    <a href="#" class="link-btn link-btn--white bannerSlider__link">
+                                        <div class="link-btn__name">Каталог</div>
+                                        <div class="link-btn__arrow link-arrow">
+                                            <svg class="link-arrow__self" width="60" height="8" viewBox="0 0 60 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M59.7014 4.35355C59.8966 4.15829 59.8966 3.84171 59.7014 3.64645L56.5194 0.464466C56.3241 0.269204 56.0076 0.269204 55.8123 0.464466C55.617 0.659728 55.617 0.976311 55.8123 1.17157L58.6407 4L55.8123 6.82843C55.617 7.02369 55.617 7.34027 55.8123 7.53553C56.0076 7.7308 56.3241 7.7308 56.5194 7.53553L59.7014 4.35355ZM0 4.5H59.3478V3.5H0V4.5Z" fill="#181818"/>
+                                            </svg>
+                                            <span class="link-arrow__circle"></span>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="img/main/banner-3.jpg">        
-                            <div class="container">
-                                <a href="#" class="link-btn">
+                          <div class="swiper-slide bannerSlider__slide">
+                            <img src="img/main/banner-3.jpg" class="bannerSlider__image">
+                            <div class="container bannerSlider__content">
+                                <a href="#" class="link-btn bannerSlider__link">
                                     <div class="link-btn__name">Каталог</div>
                                     <div class="link-btn__arrow link-arrow">
-                                        <img src="img/main/icon-arrow-right.svg" class="link-arrow__self">
+                                        <svg class="link-arrow__self" width="60" height="8" viewBox="0 0 60 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M59.7014 4.35355C59.8966 4.15829 59.8966 3.84171 59.7014 3.64645L56.5194 0.464466C56.3241 0.269204 56.0076 0.269204 55.8123 0.464466C55.617 0.659728 55.617 0.976311 55.8123 1.17157L58.6407 4L55.8123 6.82843C55.617 7.02369 55.617 7.34027 55.8123 7.53553C56.0076 7.7308 56.3241 7.7308 56.5194 7.53553L59.7014 4.35355ZM0 4.5H59.3478V3.5H0V4.5Z" fill="#181818"/>
+                                        </svg>
                                         <span class="link-arrow__circle"></span>
                                     </div>
                                 </a>
@@ -191,7 +199,6 @@
                         <div class="swiper-pagination"></div>
                       </div>
                 </div>
-            </div>
         </section>
 
         <section class="category-tabs">
@@ -202,7 +209,7 @@
                         <div>Ювелирные украшения</div>
                     </div>
                     <div class="category-tabs-inner__content t-content-slider t-content-slider--active">
-                        <div class="t-content-slider">
+                        <div>
                             <div class="swiper categoryListSlider">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide category-item">
@@ -244,7 +251,7 @@
                         </div>
                     </div>
                     <div class="category-tabs-inner__content t-content-slider">
-                        <div class="t-content-slider">
+                        <div>
                             <div class="swiper categoryListSlider">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide category-item">
@@ -654,10 +661,10 @@
             </div>
         </section>
 
-        <section class="catalog">
+        <section class="catalog m150">
             <div class="container">
                 <div class="title"><span class="title__caption">Выбери своё украшение</span></div>
-                <a href="#" class="link-btn">
+                <a href="#" class="catalog__link link-btn">
                     <div class="link-btn__name">Каталог</div>
                     <div class="link-btn__arrow link-arrow">
                         <img src="img/main/icon-arrow-right.svg" class="link-arrow__self">
@@ -667,21 +674,23 @@
 
                 <div class="catalog__list">
                     <a href="#" class="catalog-item">
-                        <img src="img/main/you-product-1.png" class="catalog-item__image">
+                        <img src="img/main/you-product-1.png" class="catalog-item__image catalog-item__image--left">
                     </a>
                     <a href="#" class="catalog-item">
-                        <img src="img/main/you-product-2.png" class="catalog-item__image">
+                        <img src="img/main/you-product-2.png" class="catalog-item__image catalog-item__image--center">
                     </a>
                     <a href="#" class="catalog-item">
-                        <img src="img/main/you-product-3.png" class="catalog-item__image">
+                        <img src="img/main/you-product-3.png" class="catalog-item__image catalog-item__image--right">
                     </a>
                 </div>
             </div>
         </section>
 
-        <section class="blog">
+        <section class="blog m150">
             <div class="container">
-                <div class="title"><span class="title__caption">Блог</span></div>
+                <div class="title">
+                    <span class="title__caption">Блог</span>
+                </div>
 
                 <div class="blog__list blog-list">
                     <a href="#" class="blog-list__item">
@@ -718,24 +727,24 @@
             </div>
         </section>
 
-        <section class="subscription">
+        <section class="subscription m150">
             <div class="container">
                 <div class="title"><div class="title__caption">Подписаться на новостную рассылку</div></div>
                 <div class="subscription__field subscription-field">
                     <input type="text" placeholder="Email" class="subscription-field__input">
-                    <button>
+                    <button class="subscription-field__btn">
                         <img src="img/main/icon-arrow-right.svg">
                     </button>
                 </div>
             </div>
         </section>
-
     </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer__inner footer-inner">
                 <div class="footer-inner__top footer-inner-top">
-                    <div class="footer-inner-top__column">
+                    <div class="footer-inner-top__column footer-inner-top__column--first">
                         <div>
                             <ul class="footer-menu">
                                 <li><a href="#">Украшения</a></li>
@@ -757,7 +766,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="footer-inner-top__column">
+                    <div class="footer-inner-top__column footer-inner-top__column--last">
                         <div class="footer-info-block">
                             <div class="footer-info-block__name">Адрес</div>
                             <div class="footer-info-block__content">
@@ -772,11 +781,15 @@
                         </div>
                         <div class="footer-info-block">
                             <div class="footer-info-block__name">Режим работы</div>
-                            <div class="footer-info-block__content">
-                                пн-пт<br>
-                                12:00-20:00<br>
-                                сб-вс<br>
-                                13:00-19:00
+                            <div class="footer-info-block__content footer-info-block__content--time">
+                                <div>
+                                    пн-пт<br>
+                                    12:00-20:00<br>
+                                </div>
+                                <div>
+                                    сб-вс<br>
+                                    13:00-19:00
+                                </div>
                             </div>
                         </div>
                         <div class="footer-info-block">
