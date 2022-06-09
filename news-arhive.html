@@ -7,14 +7,15 @@
     <title>Главная страница</title>
 
     <link href="css/normalize.min.css" type="text/css" rel="stylesheet">
+    <link href="css/swiper-bundle.min.css" type="text/css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-<header>
+<header class="header">
     <div class="container">
         <div class="header-top header__top">
             <div class="header-top__lang header-top-lang">
-                <div class="header-top-lang__item">ru</div>
+                <div class="header-top-lang__item header-top-lang__item--active">ru</div>
                 <div class="header-top-lang__item">en</div>
                 <div class="header-top-lang__item">zh</div>
             </div>
@@ -144,15 +145,17 @@
         </div>
     </div>
 </header>
+
+
 <main>
     <div class="container">
         <div class="breadcrums">
-            <div class="breadcrums__item">Главная</div>
             <div class="breadcrums__item">
                 <a href="#">
-                    Блог
+                    Главная
                 </a>
             </div>
+            <div class="breadcrums__item">Блог</div>
         </div>
 
         <h1 class="title-h1"><span class="title-h1__caption">Блог</span></h1>
@@ -174,7 +177,7 @@
                     <div class="i-blog-content__text">
                         Текст-заполнитель — это текст, который имеет некоторые характеристики реального письменного текста, но является случайным набором слов или сгенерирован иным образом.
                     </div>
-                    <a href="#" class="link-btn">
+                    <a href="#" class="i-blog-content__link link-btn">
                         <div class="link-btn__name">читать</div>
                         <div class="link-btn__arrow link-arrow">
                             <img src="img/main/icon-arrow-right.svg" class="link-arrow__self">
@@ -196,7 +199,7 @@
                     <div class="i-blog-content__text">
                         Текст-заполнитель — это текст, который имеет некоторые характеристики реального письменного текста, но является случайным набором слов или сгенерирован иным образом.
                     </div>
-                    <a href="#" class="link-btn">
+                    <a href="#" class="link-btn i-blog-content__link">
                         <div class="link-btn__name">читать</div>
                         <div class="link-btn__arrow link-arrow">
                             <img src="img/main/icon-arrow-right.svg" class="link-arrow__self">
@@ -218,7 +221,7 @@
                     <div class="i-blog-content__text">
                         Текст-заполнитель — это текст, который имеет некоторые характеристики реального письменного текста, но является случайным набором слов или сгенерирован иным образом.
                     </div>
-                    <a href="#" class="link-btn">
+                    <a href="#" class="link-btn i-blog-content__link">
                         <div class="link-btn__name">читать</div>
                         <div class="link-btn__arrow link-arrow">
                             <img src="img/main/icon-arrow-right.svg" class="link-arrow__self">
@@ -240,7 +243,7 @@
                     <div class="i-blog-content__text">
                         Текст-заполнитель — это текст, который имеет некоторые характеристики реального письменного текста, но является случайным набором слов или сгенерирован иным образом.
                     </div>
-                    <a href="#" class="link-btn">
+                    <a href="#" class="link-btn i-blog-content__link">
                         <div class="link-btn__name">читать</div>
                         <div class="link-btn__arrow link-arrow">
                             <img src="img/main/icon-arrow-right.svg" class="link-arrow__self">
@@ -266,12 +269,12 @@
         </section>
     </div>
 
-    <section class="subscription">
+    <section class="subscription m150">
         <div class="container">
             <div class="title"><div class="title__caption">Подписаться на новостную рассылку</div></div>
             <div class="subscription__field subscription-field">
                 <input type="text" placeholder="Email" class="subscription-field__input">
-                <button>
+                <button class="subscription-field__btn">
                     <img src="img/main/icon-arrow-right.svg">
                 </button>
             </div>
@@ -279,11 +282,12 @@
     </section>
 
 </main>
+
 <footer class="footer">
     <div class="container">
         <div class="footer__inner footer-inner">
             <div class="footer-inner__top footer-inner-top">
-                <div class="footer-inner-top__column">
+                <div class="footer-inner-top__column footer-inner-top__column--first">
                     <div>
                         <ul class="footer-menu">
                             <li><a href="#">Украшения</a></li>
@@ -305,7 +309,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="footer-inner-top__column">
+                <div class="footer-inner-top__column footer-inner-top__column--last">
                     <div class="footer-info-block">
                         <div class="footer-info-block__name">Адрес</div>
                         <div class="footer-info-block__content">
@@ -320,11 +324,15 @@
                     </div>
                     <div class="footer-info-block">
                         <div class="footer-info-block__name">Режим работы</div>
-                        <div class="footer-info-block__content">
-                            пн-пт<br>
-                            12:00-20:00<br>
-                            сб-вс<br>
-                            13:00-19:00
+                        <div class="footer-info-block__content footer-info-block__content--time">
+                            <div>
+                                пн-пт<br>
+                                12:00-20:00<br>
+                            </div>
+                            <div>
+                                сб-вс<br>
+                                13:00-19:00
+                            </div>
                         </div>
                     </div>
                     <div class="footer-info-block">
@@ -358,6 +366,62 @@
         </div>
     </div>
 </footer>
+<script src="js/swiper-bundle.min.js" type="text/javascript"></script>
 <script src="js/main.js" type="text/javascript"></script>
+<script>
+    const bannerSlider = new Swiper(".bannerSlider", {
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+
+    const collectionsSlider = new Swiper(".collectionsSlider", {
+        loop: true,
+        navigation: {
+            nextEl: ".collections-button-next",
+            prevEl: ".collections-button-prev",
+        },
+    });
+
+    const categoryListSliderCat1 = new Swiper(".categoryListSlider--cat1", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: ".cat1-button-next",
+            prevEl: ".cat1-button-prev",
+        },
+    });
+
+    const categoryListSliderCat2 = new Swiper(".categoryListSlider--cat2", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: ".cat2-button-next",
+            prevEl: ".cat2-button-prev",
+        },
+    });
+
+    const productListSliderHit = new Swiper(".productListSlider--hit", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+            nextEl: ".product-hit-button-next",
+            prevEl: ".product-hit-button-prev",
+        },
+    });
+
+    const productListSliderNew = new Swiper(".productListSlider--new", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+            nextEl: ".product-new-button-next",
+            prevEl: ".product-new-button-prev",
+        },
+    });
+</script>
 </body>
 </html>
