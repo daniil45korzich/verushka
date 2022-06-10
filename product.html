@@ -4,59 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная страница</title>
+    <title>Карточка товара</title>
 
     <link href="css/normalize.min.css" type="text/css" rel="stylesheet">
     <link href="css/swiper-bundle.min.css" type="text/css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
-    <style>
-        .swiper {
-            width: 100%;
-            height: 300px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .swiper-slide {
-            background-size: cover;
-            background-position: center;
-        }
-
-        .mySwiper2 {
-            height: 80%;
-            width: 100%;
-        }
-
-        .mySwiper {
-            height: 20%;
-            box-sizing: border-box;
-            padding: 10px 0;
-        }
-
-        .mySwiper .swiper-slide {
-            width: 25%;
-            height: 100%;
-            opacity: 0.4;
-        }
-
-        .mySwiper .swiper-slide-thumb-active {
-            opacity: 1;
-        }
-
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    </style>
 </head>
 <body>
-<header>
+<header class="header">
     <div class="container">
         <div class="header-top header__top">
             <div class="header-top__lang header-top-lang">
-                <div class="header-top-lang__item">ru</div>
+                <div class="header-top-lang__item header-top-lang__item--active">ru</div>
                 <div class="header-top-lang__item">en</div>
                 <div class="header-top-lang__item">zh</div>
             </div>
@@ -186,6 +145,7 @@
         </div>
     </div>
 </header>
+
 <main>
     <div class="container">
         <div class="breadcrums">
@@ -222,8 +182,6 @@
                                 <img src="img/product/product-main.jpg" />
                             </div>
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
                     </div>
                     <div thumbsSlider="" class="swiper thumbsSlider">
                         <div class="swiper-wrapper">
@@ -258,24 +216,24 @@
                         <div class="product-content-option__title">Размер:</div>
                         <div class="product-content-option__item">
                             <input type="radio" id="size-13" name="size">
-                            <label class="product-content-option__name">13</label>
+                            <label class="product-content-option__name" for="size-13">13</label>
                         </div>
                         <div class="product-content-option__item">
                             <input type="radio" id="size-14" name="size">
-                            <label class="product-content-option__name">14</label>
+                            <label class="product-content-option__name" for="size-14">14</label>
                         </div>
                         <div class="product-content-option__item">
                             <input type="radio" id="size-15" name="size">
-                            <label class="product-content-option__name">15</label>
+                            <label class="product-content-option__name" for="size-15">15</label>
                         </div>
                     </div>
                     <div class="product-content__stock stock-status">Есть в наличии</div>
                     <div class="product-content__price">3 400 ₽</div>
                     <div class="product-content__btns">
                         <button type="submit" class="btn btn-add-cart">Добавить в корзину</button>
-                        <a href="#">
+                        <a href="#" class="btn-add-wishlist">
                             <img src="img/main/icon-wishlist.png">
-                            <span>Добавить в wishlist</span>
+                            <span class="btn-add-wishlist__text">Добавить в wishlist</span>
                         </a>
                     </div>
                     <div class="product-content__hint product-content-hint">
@@ -371,88 +329,122 @@
         </div>
     </section>
 
-    <section class="carusel-product">
-        <div class="container">
-            <div class="title"><span class="title__caption">С этим товаром покупают</span></div>
-            <div class="swiper productListSlider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide product-item">
-                <div class="product-item__link product-item-link">
-                    <div class="product-item-link__image product-item-link-image">
-                        <a href="#"><img src="img/main/product-1.jpg"></a>
-                        <span class="product-item-link-image__wishlist">
-                                                <img src="img/main/wishlist-product-add.svg">
-                                            </span>
+    <div class="container">
+        <section class="carusel-product m150">
+            <div class="carusel-product__title title"><span class="title__caption">С этим товаром покупают</span></div>
+            <div class="swiper productСaruselSlider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide product-item">
+                        <div class="product-item__link product-item-link">
+                            <div class="product-item-link__image product-item-link-image">
+                                <a href="#"><img src="img/main/product-1.jpg"></a>
+                                <span class="product-item-link-image__wishlist">
+                                                    <img src="img/main/wishlist-product-add.svg">
+                                                </span>
+                            </div>
+                            <a href="#" class="product-item-link__name">Наименование украшения</a>
+                            <div class="product-item-link__description">Золотистый, Жемчуг, Жемчуг, Нарядная база</div>
+                            <div class="product-item-link__price">3 000 ₽</div>
+                            <div class="product-item-link__btn">
+                                <button type="submit" class="btn btn-buy">Купить</button>
+                            </div>
+                        </div>
                     </div>
-                    <a href="#" class="product-item-link__name">Наименование украшения</a>
-                    <div class="product-item-link__description">Золотистый, Жемчуг, Жемчуг, Нарядная база</div>
-                    <div class="product-item-link__price">3 000 ₽</div>
-                    <div class="product-item-link__btn">
-                        <button type="submit" class="btn btn-buy">Купить</button>
+                    <div class="swiper-slide product-item">
+                        <div class="product-item__link product-item-link">
+                            <div class="product-item-link__image product-item-link-image">
+                                <a href="#"><img src="img/main/product-2.jpg"></a>
+                                <span class="product-item-link-image__wishlist">
+                                                    <img src="img/main/wishlist-product-add.svg">
+                                                </span>
+                            </div>
+                            <a href="#" class="product-item-link__name">Наименование украшения</a>
+                            <div class="product-item-link__description">Золотистый, Жемчуг, Жемчуг, Нарядная база</div>
+                            <div class="product-item-link__price">3 000 ₽</div>
+                            <div class="product-item-link__btn">
+                                <button type="submit" class="btn btn-buy">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide product-item">
+                        <div class="product-item__link product-item-link">
+                            <div class="product-item-link__image product-item-link-image">
+                                <a href="#"><img src="img/main/product-1.jpg"></a>
+                                <span class="product-item-link-image__wishlist">
+                                                    <img src="img/main/wishlist-product-add.svg">
+                                                </span>
+                            </div>
+                            <a href="#" class="product-item-link__name">Наименование украшения</a>
+                            <div class="product-item-link__description">Золотистый, Жемчуг, Жемчуг, Нарядная база</div>
+                            <div class="product-item-link__price">3 000 ₽</div>
+                            <div class="product-item-link__btn">
+                                <button type="submit" class="btn btn-buy">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide product-item">
+                        <div class="product-item__link product-item-link">
+                            <div class="product-item-link__image product-item-link-image">
+                                <a href="#"><img src="img/main/product-1.jpg"></a>
+                                <span class="product-item-link-image__wishlist">
+                                                    <img src="img/main/wishlist-product-add.svg">
+                                                </span>
+                            </div>
+                            <a href="#" class="product-item-link__name">Наименование украшения</a>
+                            <div class="product-item-link__description">Золотистый, Жемчуг, Жемчуг, Нарядная база</div>
+                            <div class="product-item-link__price">3 000 ₽</div>
+                            <div class="product-item-link__btn">
+                                <button type="submit" class="btn btn-buy">Купить</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide product-item">
-                <div class="product-item__link product-item-link">
-                    <div class="product-item-link__image product-item-link-image">
-                        <a href="#"><img src="img/main/product-1.jpg"></a>
-                        <span class="product-item-link-image__wishlist">
-                                                <img src="img/main/wishlist-product-add.svg">
-                                            </span>
-                    </div>
-                    <a href="#" class="product-item-link__name">Наименование украшения</a>
-                    <div class="product-item-link__description">Золотистый, Жемчуг, Жемчуг, Нарядная база</div>
-                    <div class="product-item-link__price">3 000 ₽</div>
-                    <div class="product-item-link__btn">
-                        <button type="submit" class="btn btn-buy">Купить</button>
-                    </div>
+            <div class="product-button-next product-carusel-button-next link-btn ">
+                <div class="link-btn__arrow link-arrow">
+                    <svg class="link-arrow__self" width="60" height="8" viewBox="0 0 60 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M59.7014 4.35355C59.8966 4.15829 59.8966 3.84171 59.7014 3.64645L56.5194 0.464466C56.3241 0.269204 56.0076 0.269204 55.8123 0.464466C55.617 0.659728 55.617 0.976311 55.8123 1.17157L58.6407 4L55.8123 6.82843C55.617 7.02369 55.617 7.34027 55.8123 7.53553C56.0076 7.7308 56.3241 7.7308 56.5194 7.53553L59.7014 4.35355ZM0 4.5H59.3478V3.5H0V4.5Z" fill="#181818"></path>
+                    </svg>
+                    <span class="link-arrow__circle"></span>
                 </div>
             </div>
-            <div class="swiper-slide product-item">
-                <div class="product-item__link product-item-link">
-                    <div class="product-item-link__image product-item-link-image">
-                        <a href="#"><img src="img/main/product-1.jpg"></a>
-                        <span class="product-item-link-image__wishlist">
-                                                <img src="img/main/wishlist-product-add.svg">
-                                            </span>
-                    </div>
-                    <a href="#" class="product-item-link__name">Наименование украшения</a>
-                    <div class="product-item-link__description">Золотистый, Жемчуг, Жемчуг, Нарядная база</div>
-                    <div class="product-item-link__price">3 000 ₽</div>
-                    <div class="product-item-link__btn">
-                        <button type="submit" class="btn btn-buy">Купить</button>
-                    </div>
+            <div class="product-button-prev product-carusel-button-prev link-btn link-btn--left">
+                <div class="link-btn__arrow link-arrow">
+                    <svg class="link-arrow__self" width="60" height="8" viewBox="0 0 60 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M59.7014 4.35355C59.8966 4.15829 59.8966 3.84171 59.7014 3.64645L56.5194 0.464466C56.3241 0.269204 56.0076 0.269204 55.8123 0.464466C55.617 0.659728 55.617 0.976311 55.8123 1.17157L58.6407 4L55.8123 6.82843C55.617 7.02369 55.617 7.34027 55.8123 7.53553C56.0076 7.7308 56.3241 7.7308 56.5194 7.53553L59.7014 4.35355ZM0 4.5H59.3478V3.5H0V4.5Z" fill="#181818"></path>
+                    </svg>
+                    <span class="link-arrow__circle"></span>
                 </div>
             </div>
-            <div class="swiper-slide product-item">
-                <div class="product-item__link product-item-link">
-                    <div class="product-item-link__image product-item-link-image">
-                        <a href="#"><img src="img/main/product-1.jpg"></a>
-                        <span class="product-item-link-image__wishlist">
-                                                <img src="img/main/wishlist-product-add.svg">
-                                            </span>
-                    </div>
-                    <a href="#" class="product-item-link__name">Наименование украшения</a>
-                    <div class="product-item-link__description">Золотистый, Жемчуг, Жемчуг, Нарядная база</div>
-                    <div class="product-item-link__price">3 000 ₽</div>
-                    <div class="product-item-link__btn">
-                        <button type="submit" class="btn btn-buy">Купить</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="product-button-next"></div>
-        <div class="product-button-prev"></div>
+        </section>
     </div>
-        </div>
-    </section>
 
-    <section class="faq">
+    <section class="faq m150">
         <div class="container">
-            <div class="title"><span class="title__caption">Часто задаваемые вопросы</span></div>
+            <div class="faq__title title"><span class="title__caption">Часто задаваемые вопросы</span></div>
             <div class="faq__list faq-list">
-                <div class="faq-list__item faq-list-item">
+                <div class="faq-list__item faq-list-item faq-list-item--active">
                     <div class="faq-list-item__name">Темнеет ли украшение?</div>
+                    <div class="faq-list-item__icon">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="7" width="15" height="1" fill="#181818"/>
+                            <rect x="7" y="15" width="15" height="1" transform="rotate(-90 7 15)" fill="#181818"/>
+                        </svg>
+                    </div>
+                    <div class="faq-list-item__caption">Украшение не темнеет, если за ним правильно ухаживать. Текст-заполнитель — это текст, который имеет некоторые характеристики реального...</div>
+                </div>
+                <div class="faq-list__item faq-list-item">
+                    <div class="faq-list-item__name">Как за ним ухаживать?</div>
+                    <div class="faq-list-item__icon">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="7" width="15" height="1" fill="#181818"/>
+                            <rect x="7" y="15" width="15" height="1" transform="rotate(-90 7 15)" fill="#181818"/>
+                        </svg>
+                    </div>
+                    <div class="faq-list-item__caption">Украшение не темнеет, если за ним правильно ухаживать. Текст-заполнитель — это текст, который имеет некоторые характеристики реального...</div>
+                </div>
+                <div class="faq-list__item faq-list-item">
+                    <div class="faq-list-item__name">Из чего сделано украшение?</div>
                     <div class="faq-list-item__icon">
                         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect y="7" width="15" height="1" fill="#181818"/>
@@ -465,12 +457,12 @@
         </div>
     </section>
 
-    <section class="subscription">
+    <section class="subscription m150">
         <div class="container">
             <div class="title"><div class="title__caption">Подписаться на новостную рассылку</div></div>
             <div class="subscription__field subscription-field">
                 <input type="text" placeholder="Email" class="subscription-field__input">
-                <button>
+                <button class="subscription-field__btn">
                     <img src="img/main/icon-arrow-right.svg">
                 </button>
             </div>
@@ -482,7 +474,7 @@
     <div class="container">
         <div class="footer__inner footer-inner">
             <div class="footer-inner__top footer-inner-top">
-                <div class="footer-inner-top__column">
+                <div class="footer-inner-top__column footer-inner-top__column--first">
                     <div>
                         <ul class="footer-menu">
                             <li><a href="#">Украшения</a></li>
@@ -504,7 +496,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="footer-inner-top__column">
+                <div class="footer-inner-top__column footer-inner-top__column--last">
                     <div class="footer-info-block">
                         <div class="footer-info-block__name">Адрес</div>
                         <div class="footer-info-block__content">
@@ -519,11 +511,15 @@
                     </div>
                     <div class="footer-info-block">
                         <div class="footer-info-block__name">Режим работы</div>
-                        <div class="footer-info-block__content">
-                            пн-пт<br>
-                            12:00-20:00<br>
-                            сб-вс<br>
-                            13:00-19:00
+                        <div class="footer-info-block__content footer-info-block__content--time">
+                            <div>
+                                пн-пт<br>
+                                12:00-20:00<br>
+                            </div>
+                            <div>
+                                сб-вс<br>
+                                13:00-19:00
+                            </div>
                         </div>
                     </div>
                     <div class="footer-info-block">
@@ -560,20 +556,24 @@
 <script src="js/swiper-bundle.min.js" type="text/javascript"></script>
 <script src="js/main.js" type="text/javascript"></script>
 <script>
-    const thumbsSlider = new Swiper(".thumbsSlider", {
-        loop: true,
-        spaceBetween: 10,
+    const productСaruselSlider = new Swiper(".productСaruselSlider", {
         slidesPerView: 4,
-        freeMode: true,
-        watchSlidesProgress: true,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+            nextEl: ".product-carusel-button-next",
+            prevEl: ".product-carusel-button-prev",
+        },
     });
+
+    const thumbsSlider = new Swiper(".thumbsSlider", {
+        spaceBetween: 10,
+        slidesPerView: 5,
+    });
+
     const mainSlider = new Swiper(".mainSlider", {
         loop: true,
         spaceBetween: 10,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
         thumbs: {
             swiper: thumbsSlider,
         },
