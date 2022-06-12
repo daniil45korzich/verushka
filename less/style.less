@@ -41,6 +41,25 @@ html{
     color: #000000;
 }
 
+.btn{
+    text-decoration: none;
+    background: #BAA391;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 285px;
+    margin: auto;
+}
+
 .view-all{
     border: 1px solid #000000;
     height: 50px;
@@ -1612,6 +1631,16 @@ html{
         margin-top: 170px;
     }
 
+    &__text{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        margin-top: 20px;
+        text-align: center;
+        color: #181818;
+        opacity: 0.8;
+    }
+
     .cart-empty-image{
         display: flex;
         justify-content: center;
@@ -1974,5 +2003,236 @@ html{
             align-items: center;
             justify-content: center;
         }
+    }
+}
+
+/* WISHLIST AND CART PRODUCTS */
+.title-page-wishlist{
+    margin-bottom: 50px;
+}
+
+.product-table{
+    &:not(:last-child) {
+        margin-bottom: 100px;
+    }
+
+    &__title{
+        margin-top: 100px;
+    }
+
+    &__text{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        color: #181818;
+        opacity: 0.8;
+    }
+
+    .p-table-wrapper{
+        border: 1px solid rgba(134, 134, 134, 0.3);
+        padding: 10px 20px;
+        display: table;
+        width: 100%;
+
+        &--text{
+            padding-bottom: 60px;
+        }
+
+        &__text{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 115%;
+            max-width: 735px;
+            color: #181818;
+            opacity: 0.5;
+            margin-top: 10px;
+            position: absolute;
+            width: 100%;
+        }
+
+        &__row{
+            display: table-row;
+
+            .p-table-wrapper__column {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-top: 1px solid rgba(134, 134, 134, 0.3);
+            }
+
+            &--head{
+                .p-table-wrapper__column{
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 115%;
+                    color: #181818;
+                    border-top:none;
+                }
+            }
+        }
+
+        &__column{
+            display: table-cell;
+            vertical-align: middle;
+
+            &--price{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 100%;
+                color: #181818;
+            }
+            
+            .table-qty{
+                display: flex;
+                align-items: center;
+
+                &__input{
+                    border: none;
+                    width: 50px;
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 140%;
+                    color: #181818;
+                }
+
+                &__minus,
+                &__plus
+                {
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    background: none;
+                    border: none;
+                }
+            }
+        }
+
+        .product-information{
+            display: flex;
+            align-items: center;
+
+            &__image{
+                img{
+                    width: 75px;
+                    height: 90px;
+                    object-fit: cover;
+                    display: block;
+                }
+            }
+
+            &__description{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 115%;
+                color: #181818;
+                opacity: 0.9;
+                margin-left: 15px;
+            }
+        }
+    }
+
+    .product-actions{
+        &__btn{
+            float: right;
+        }
+        &__close{
+            float: right;
+            padding: 10px 0 10px 40px;
+            
+            svg{
+                display: block;
+            }
+        }
+    }
+
+    &__bottom{
+        text-align: right;
+        margin-top: 20px;
+    }
+
+    &__top{
+        text-align: right;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+
+    .product-table-top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__title{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 120%;
+            text-transform: uppercase;
+            color: #181818;
+        }
+    }
+
+    .product-table-bottom{
+        display: flex;
+        justify-content: space-between;
+
+        &__total{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 120%;
+            text-transform: uppercase;
+            color: #181818;
+        }
+    }
+
+    &__clear{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 115%;
+        color: #181818;
+        opacity: 0.3;
+        text-decoration: none;
+        border-bottom: 1px solid;
+    }
+
+    .product-table-checkout{
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        margin-top: 40px;
+
+        &__shop{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 115%;
+            text-decoration: none;
+            border-bottom: 1px solid;
+            color: #181818;
+        }
+
+        &__btn{
+            margin:0 0 0 35px;
+        }
+    }
+}
+
+.table-bottom-coupon{
+    position: relative;
+
+    &__input{
+        background: #F9F9F9;
+        border: 1px solid #DEDEDE;
+        height: 40px;
+        width: 285px;
+        padding-left: 15px;
+        padding-right: 50px;
+        outline: none;
+    }
+
+    &__btn{
+        position: absolute;
+        right: 0;
+        border: none;
+        background: none;
+        padding: 11px;
+        cursor: pointer;
     }
 }
