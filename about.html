@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница о нас</title>
+
+    <link href="css/normalize.min.css" type="text/css" rel="stylesheet">
+    <link href="css/swiper-bundle.min.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body class="body-about-page">
+<header class="header">
+    <div class="container">
+        <div class="header-top header__top">
+            <div class="header-top__lang header-top-lang">
+                <div class="header-top-lang__item header-top-lang__item--active">ru</div>
+                <div class="header-top-lang__item">en</div>
+                <div class="header-top-lang__item">zh</div>
+            </div>
+            <div class="header-top__logo">
+                <a href="#">
+                    <img src="img/main/logo-header.svg">
+                </a>
+            </div>
+            <div class="header-top__icons header-top-icons">
+                <div class="header-top-icons__search">
+                    <img src="img/main/icon-search.png">
+                </div>
+                <div class="header-top-icons__wishlist">
+                    <a href="#">
+                        <img src="img/main/icon-wishlist.png">
+                    </a>
+                </div>
+                <div class="header-top-icons__cart">
+                    <a href="#">
+                        <img src="img/main/icon-cart.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom header__bottom">
+            <nav class="header-bottom__nav">
+                <ul class="header-bottom__list header-bottom-list">
+                    <li class="header-bottom-list__item"><a href="#" class="header-bottom-list__link">Каталог</a></li>
+                    <li class="header-bottom-list__item"><a href="#" class="header-bottom-list__link">О нас</a></li>
+                    <li class="header-bottom-list__item"><a href="#" class="header-bottom-list__link">Коллекция</a></li>
+                    <li class="header-bottom-list__item"><a href="#" class="header-bottom-list__link">Полезная информация</a></li>
+                    <li class="header-bottom-list__item"><a href="#" class="header-bottom-list__link">Идеи подарков</a></li>
+                    <li class="header-bottom-list__item"><a href="#" class="header-bottom-list__link header-bottom-list__link--exclusive">Exclusive</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="catalog-menu">
+        <div class="container">
+            <div class="i-catalog-menu catalog-menu_inner">
+                <div class="i-catalog-menu__column">
+                    <nav class="i-catalog-menu__wrapper w-catalog-menu">
+                        <ul class="w-catalog-menu__list w-catalog-menu__list--first catalog-menu-list">
+                            <li class="catalog-menu-list__item"><a href="#">Бижутерия</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Серебро</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Ювелирные украшения</a></li>
+                        </ul>
+                        <ul class="w-catalog-menu__list w-catalog-menu__list--middle catalog-menu-list">
+                            <li class="catalog-menu-list__item  catalog-menu-list__item--main"><a href="#">Все украшения</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Серьги</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Каффы</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Кольца</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Браслеты</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Колье</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Жемчужное колье</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Браслет на ногу</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Сеты</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Аксессуары</a></li>
+                        </ul>
+                        <ul class="w-catalog-menu__list w-catalog-menu__list--last catalog-menu-list">
+                            <li class="catalog-menu-list__item"><a href="#">Новинки</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Bestseller</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Идеи подарков</a></li>
+                            <li class="catalog-menu-list__item"><a href="#">Персонализация</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="i-catalog-menu__column">
+                    <div class="i-catalog-menu__content catalog-menu-content catalog-menu-content--active"><!--- БЛОК МОЖНО ДУБЛИРОВАТЬ --->
+                        <div class="catalog-menu-content__item menu-content-item">
+                            <a href="#">
+                                <img src="img/menu/img-sergi.jpg">
+                                <span class="menu-content-item__name">Серьги</span>
+                            </a>
+                        </div>
+                        <div class="catalog-menu-content__item menu-content-item">
+                            <a href="#">
+                                <img src="img/menu/img-kafy.jpg">
+                                <span class="menu-content-item__name">Кафы</span>
+                            </a>
+                        </div>
+                        <div class="catalog-menu-content__item menu-content-item">
+                            <a href="#">
+                                <img src="img/menu/img-kolca.jpg">
+                                <span class="menu-content-item__name">Кольца</span>
+                            </a>
+                        </div>
+                        <div class="catalog-menu-content__item menu-content-item">
+                            <a href="#">
+                                <img src="img/menu/img-braslety.jpg">
+                                <span class="menu-content-item__name">Браслеты</span>
+                            </a>
+                        </div>
+                        <div class="catalog-menu-content__item menu-content-item">
+                            <a href="#">
+                                <img src="img/menu/img-kolje.jpg">
+                                <span class="menu-content-item__name">Колье</span>
+                            </a>
+                        </div>
+                        <div class="catalog-menu-content__item menu-content-item">
+                            <a href="#">
+                                <img src="img/menu/img-kolje.jpg">
+                                <span class="menu-content-item__name">Жемчужное колье</span>
+                            </a>
+                        </div>
+                        <div class="catalog-menu-content__item menu-content-item">
+                            <a href="#">
+                                <img src="img/menu/img-braslet-na-nogu.jpg">
+                                <span class="menu-content-item__name">Браслет на ногу</span>
+                            </a>
+                        </div>
+                        <div class="catalog-menu-content__item menu-content-item">
+                            <a href="#">
+                                <img src="img/menu/img-sety.jpg">
+                                <span class="menu-content-item__name">Сеты</span>
+                            </a>
+                        </div>
+                        <div class="catalog-menu-content__item menu-content-item">
+                            <a href="#">
+                                <img src="img/menu/img-aksessuary.jpg">
+                                <span class="menu-content-item__name">Аксессуары</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="bg-gray">
+        <div class="container">
+            <div class="breadcrums">
+                <div class="breadcrums__item">
+                    <a href="#">Главная</a>
+                </div>
+                <div class="breadcrums__item">
+                    О нас
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="about-page bg-gray">
+        <div class="container">
+            <div class="about-page__title title">
+                <div class="title__caption">Украшения VERUSCHKA – ощущение праздника в каждом дне</div>
+            </div>
+            <div class="swiper aboutPageSlider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide category-item">
+                        <a href="#" class="about-item__link about-item-link">
+                            <div class="category-item-link__image">
+                                <img src="img/about/about-first-img.jpg">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide category-item">
+                        <a href="#" class="about-item__link about-item-link">
+                            <div class="category-item-link__image">
+                                <img src="img/about/about-first-img.jpg">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="about-button-next link-btn">
+                <div class="link-btn__arrow link-arrow">
+                    <svg class="link-arrow__self" width="60" height="8" viewBox="0 0 60 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M59.7014 4.35355C59.8966 4.15829 59.8966 3.84171 59.7014 3.64645L56.5194 0.464466C56.3241 0.269204 56.0076 0.269204 55.8123 0.464466C55.617 0.659728 55.617 0.976311 55.8123 1.17157L58.6407 4L55.8123 6.82843C55.617 7.02369 55.617 7.34027 55.8123 7.53553C56.0076 7.7308 56.3241 7.7308 56.5194 7.53553L59.7014 4.35355ZM0 4.5H59.3478V3.5H0V4.5Z" fill="#181818"></path>
+                    </svg>
+                    <span class="link-arrow__circle"></span>
+                </div>
+            </div>
+            <div class="about-button-prev link-btn link-btn--left">
+                <div class="link-btn__arrow link-arrow">
+                    <svg class="link-arrow__self" width="60" height="8" viewBox="0 0 60 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M59.7014 4.35355C59.8966 4.15829 59.8966 3.84171 59.7014 3.64645L56.5194 0.464466C56.3241 0.269204 56.0076 0.269204 55.8123 0.464466C55.617 0.659728 55.617 0.976311 55.8123 1.17157L58.6407 4L55.8123 6.82843C55.617 7.02369 55.617 7.34027 55.8123 7.53553C56.0076 7.7308 56.3241 7.7308 56.5194 7.53553L59.7014 4.35355ZM0 4.5H59.3478V3.5H0V4.5Z" fill="#181818"></path>
+                    </svg>
+                    <span class="link-arrow__circle"></span>
+                </div>
+            </div>
+
+            <div class="about-page__hr"></div>
+            <div class="about-page__content">“Разнообразие коллекций позволяет найти что-то свое вне зависимости от предпочтений, будь то минимализм, украшения с жемчугом, что-то утонченное с фирменными «кисточками» либо аксессуары с натуральными камнями. Ведь это все пронизано идеей «каждый день - это праздник, не нужно откладывать его на потом”</div>
+        </div>
+    </section>
+
+    <section class="video m150">
+        <div class="container">
+            <div class="video__wrapper video-wrapper">
+                <img src="img/about/about-video-img.jpg" class="video-wrapper__image">
+                <div class="video-wrapper__play">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="49.5" stroke="#EFEDEC"/>
+                        <path opacity="0.7" d="M75 50L37.5 71.6506V28.3494L75 50Z" fill="#EFEDEC"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-block m150">
+        <div class="container">
+            <div class="info-block__wrapper info-block-wrapper">
+                <div class="info-block-wrapper__image info-block-wrapper__image--radius">
+                    <img src="img/about/osnovateli-photo.png">
+                </div>
+                <div class="info-block-wrapper__content info-block-content">
+                    <div class="info-block-content__title info-block-content__title--mt120 title">
+                        <span class="title__caption">
+                            Основатели: Владимир и Римма Ефремовы
+                        </span>
+                    </div>
+                    <div class="info-block-content__text">
+                        Текст-заполнитель — это текст, который имеет некоторые характеристики реального письменного текста, но является случайным набором слов или сгенерирован иным образом. Его можно использовать для отображения образца шрифтов.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-block m150 bg-gray">
+        <div class="container">
+            <div class="info-block__wrapper info-block-wrapper info-block-wrapper--revert">
+                <div class="info-block-wrapper__image">
+                    <img src="img/about/manufacturer-same.jpg">
+                </div>
+                <div class="info-block-wrapper__content info-block-content">
+                    <div class="info-block-content__title info-block-content__title--mt70 title">
+                        <span class="title__caption">
+                            Собственное производство
+                        </span>
+                    </div>
+                    <div class="info-block-content__text">
+                        <p>Текст-заполнитель — это текст, который имеет некоторые характеристики реального письменного текста, но является случайным набором слов или сгенерирован иным образом. Его можно использовать для отображения образца шрифтов, создания текста для тестирования или обхода спам-фильтр</p>
+                        <p>Текст-заполнитель — это текст, который имеет некоторые характеристики реального письменного текста.</p>
+                    </div>
+
+                    <a href="#" class="info-block-wrapper__btn btn-default">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="information m150">
+        <div class="container">
+            <div class="information__inner information-inner">
+                <div class="information-inner__title title">История развития</div>
+                <div class="information-inner__date information-inner-date">
+                    <div class="information-inner-date__item information-inner-date__item--active">2015</div>
+                    <div class="information-inner-date__item">2016</div>
+                    <div class="information-inner-date__item">2017</div>
+                    <div class="information-inner-date__item">2018</div>
+                    <div class="information-inner-date__item">2019</div>
+                    <div class="information-inner-date__item">2020</div>
+                    <div class="information-inner-date__item">2021</div>
+                    <div class="information-inner-date__item">2022</div>
+                </div>
+                <div class="information-inner__content c-information-inner">
+                    <div class="c-information-inner__left">
+                        <div>
+                           <p>Бренд VERUSCHKA появился в 2015 году в Казани на волне стремительно растущего количества локальных дизайнеров в качестве «пробы пера» создать что-то уникальное.</p>
+                            <p>Все началось с небольшого магазина украшений и постепенно развилось в бренд украшений ручной работы.</p>
+                        </div>
+                    </div>
+                    <div class="c-information-inner__right information-inner-right">
+                        <div class="information-inner-right__dop">
+                            <img src="img/about/history-start-dop.png">
+                            <span class="information-inner-right__border"></span>
+                        </div>
+                        <img src="img/about/history-start.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-block m150">
+        <div class="container">
+            <div class="info-block__wrapper info-block-wrapper">
+                <div class="info-block-wrapper__image">
+                    <img src="img/about/filosofy-brand.jpg">
+                </div>
+                <div class="info-block-wrapper__content info-block-content">
+                    <div class="info-block-content__title info-block-content__title--mt120 title">
+                        <span class="title__caption">
+                            Философия бренда
+                        </span>
+                    </div>
+                    <div class="info-block-content__text">
+                        <p>Текст-заполнитель — это текст, который имеет некоторые характеристики реального письменного текста, но является случайным набором слов или сгенерирован иным образом. Его можно использовать для отображения образца шрифтов, создания текста для тестирования или обхода спам-фильтр
+                            Текст-заполнитель — это текст, который имеет некоторые характеристики реального письменного текста</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clients m150">
+        <div class="container">
+            <div class="clients__title">
+                <div class="clients-button-prev link-btn link-btn--left">
+                    <div class="link-btn__arrow link-arrow">
+                        <svg class="link-arrow__self" width="60" height="8" viewBox="0 0 60 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M59.7014 4.35355C59.8966 4.15829 59.8966 3.84171 59.7014 3.64645L56.5194 0.464466C56.3241 0.269204 56.0076 0.269204 55.8123 0.464466C55.617 0.659728 55.617 0.976311 55.8123 1.17157L58.6407 4L55.8123 6.82843C55.617 7.02369 55.617 7.34027 55.8123 7.53553C56.0076 7.7308 56.3241 7.7308 56.5194 7.53553L59.7014 4.35355ZM0 4.5H59.3478V3.5H0V4.5Z" fill="#181818"></path>
+                        </svg>
+                        <span class="link-arrow__circle"></span>
+                    </div>
+                </div>
+                <div class="title">
+                    <span class="title__caption">Остались довольны</span>
+                </div>
+                <div class="clients-button-next link-btn">
+                    <div class="link-btn__arrow link-arrow">
+                        <svg class="link-arrow__self" width="60" height="8" viewBox="0 0 60 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M59.7014 4.35355C59.8966 4.15829 59.8966 3.84171 59.7014 3.64645L56.5194 0.464466C56.3241 0.269204 56.0076 0.269204 55.8123 0.464466C55.617 0.659728 55.617 0.976311 55.8123 1.17157L58.6407 4L55.8123 6.82843C55.617 7.02369 55.617 7.34027 55.8123 7.53553C56.0076 7.7308 56.3241 7.7308 56.5194 7.53553L59.7014 4.35355ZM0 4.5H59.3478V3.5H0V4.5Z" fill="#181818"></path>
+                        </svg>
+                        <span class="link-arrow__circle"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="clients__wrapper">
+                <div class="swiper clientsSlider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide clients-item">
+                            <img src="img/about/client-1.jpg" class="clients-item__image">
+                            <div class="clients-item__text">@klatcen_digital</div>
+                        </div>
+                        <div class="swiper-slide clients-item">
+                            <img src="img/about/client-2.jpg" class="clients-item__image">
+                            <div class="clients-item__text">@klatcen_digital</div>
+                        </div>
+                        <div class="swiper-slide clients-item">
+                            <img src="img/about/client-3.jpg" class="clients-item__image">
+                            <div class="clients-item__text">@klatcen_digital</div>
+                        </div>
+                        <div class="swiper-slide clients-item">
+                            <img src="img/about/client-4.jpg" class="clients-item__image">
+                            <div class="clients-item__text">@klatcen_digital</div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog m150">
+        <div class="container">
+            <div class="title">
+                <span class="title__caption">Блог</span>
+            </div>
+            <div class="blog__list blog-list">
+                <a href="#" class="blog-list__item">
+                    <div class="blog-list__image">
+                        <img src="img/main/blog-1.jpg">
+                    </div>
+                    <div class="blog-list__name">Новости номер один Текст-заполнитель </div>
+                    <div class="blog-list__date">17.05.22</div>
+                </a>
+                <a href="#" class="blog-list__item">
+                    <div class="blog-list__image">
+                        <img src="img/main/blog-2.jpg">
+                    </div>
+                    <div class="blog-list__name">Новости номер один Текст-заполнитель </div>
+                    <div class="blog-list__date">17.05.22</div>
+                </a>
+                <a href="#" class="blog-list__item">
+                    <div class="blog-list__image">
+                        <img src="img/main/blog-3.jpg">
+                    </div>
+                    <div class="blog-list__name">Новости номер один Текст-заполнитель </div>
+                    <div class="blog-list__date">17.05.22</div>
+                </a>
+                <a href="#" class="blog-list__item">
+                    <div class="blog-list__image">
+                        <img src="img/main/blog-4.jpg">
+                    </div>
+                    <div class="blog-list__name">Новости номер один Текст-заполнитель </div>
+                    <div class="blog-list__date">17.05.22</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscription m150">
+        <div class="container">
+            <div class="title"><div class="title__caption">Подписаться на новостную рассылку</div></div>
+            <div class="subscription__field subscription-field">
+                <input type="text" placeholder="Email" class="subscription-field__input">
+                <button class="subscription-field__btn">
+                    <img src="img/main/icon-arrow-right.svg">
+                </button>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner footer-inner">
+            <div class="footer-inner__top footer-inner-top">
+                <div class="footer-inner-top__column footer-inner-top__column--first">
+                    <div>
+                        <ul class="footer-menu">
+                            <li><a href="#">Украшения</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Коллекции</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">Идеи подарков</a></li>
+                            <li><a href="#">Exclusive</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="footer-menu">
+                            <li><a href="#">Производство</a></li>
+                            <li><a href="#">Уход</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Оферта</a></li>
+                            <li><a href="#">Для оптовых покупателей</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-inner-top__column footer-inner-top__column--last">
+                    <div class="footer-info-block">
+                        <div class="footer-info-block__name">Адрес</div>
+                        <div class="footer-info-block__content">
+                            г. Казань, ул.Каюма Насыри, 3
+                        </div>
+                    </div>
+                    <div class="footer-info-block">
+                        <div class="footer-info-block__name">Телефон</div>
+                        <div class="footer-info-block__content">
+                            +7 987 269 03 83
+                        </div>
+                    </div>
+                    <div class="footer-info-block">
+                        <div class="footer-info-block__name">Режим работы</div>
+                        <div class="footer-info-block__content footer-info-block__content--time">
+                            <div>
+                                пн-пт<br>
+                                12:00-20:00<br>
+                            </div>
+                            <div>
+                                сб-вс<br>
+                                13:00-19:00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-info-block">
+                        <div class="footer-info-block__name">Почта</div>
+                        <div class="footer-info-block__content c-footer-info-block">
+                            info.veruschka@gmail.com
+                            <div class="c-footer-info-block__social footer-social">
+                                <div class="footer-social__item">
+                                    <a href="#"><img src="img/main/icon-telegram.png"></a>
+                                </div>
+                                <div class="footer-social__item">
+                                    <a href="#"><img src="img/main/icon-whatsapp.png"></a>
+                                </div>
+                                <div class="footer-social__item">
+                                    <a href="#"><img src="img/main/icon-pint.png"></a>
+                                </div>
+                                <div class="footer-social__item">
+                                    <a href="#"><img src="img/main/icon-vk.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-inner__bottom footer-inner-bottom">
+                <div class="footer-inner-bottom__copyright">©VERUSCHKA</div>
+                <div class="footer-inner-bottom__policy">
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/swiper-bundle.min.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+<script>
+    const clientsSlider = new Swiper(".clientsSlider", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+            nextEl: ".clients-button-next",
+            prevEl: ".clients-button-prev",
+        },
+    });
+
+    const aboutPageSlider = new Swiper(".aboutPageSlider", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: ".about-button-next",
+            prevEl: ".about-button-prev",
+        },
+    });
+</script>
+</body>
+</html>

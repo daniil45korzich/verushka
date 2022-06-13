@@ -1,0 +1,32 @@
+.laboratory__title {
+  margin-bottom: 58px;
+}
+.laboratory .laboratory-wrapper {
+  display: flex;
+}
+.laboratory .laboratory-wrapper__slider {
+  max-width: 590px;
+  width: 100%;
+  margin: 0;
+  height: max-content;
+}
+.laboratory .laboratory-wrapper__slider .laboratory-buttons {
+  display: flex;
+  justify-content: right;
+  margin-top: 20px;
+}
+.laboratory .laboratory-wrapper__slider .laboratory-buttons .laboratory-button-next {
+  margin-left: 80px;
+}
+.laboratory .laboratory-wrapper__content {
+  padding-top: 110px;
+  margin-left: 25px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #181818;
+  opacity: 0.7;
+  max-width: 400px;
+  width: 100%;
+  height: max-content;
+}

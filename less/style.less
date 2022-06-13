@@ -32,6 +32,14 @@ html{
     margin-bottom: 150px;
 }
 
+.mt100{
+    margin-top:100px;
+}
+
+.flex{
+    display: flex;
+}
+
 .title{
     font-weight: 400;
     font-size: 28px;
@@ -58,6 +66,23 @@ html{
     cursor: pointer;
     width: 285px;
     margin: auto;
+}
+
+.btn-default{
+    text-decoration: none;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    width: 285px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #181818;
+    border: 1px solid #181818;
 }
 
 .view-all{
@@ -822,6 +847,43 @@ html{
             margin-bottom:30px;
         }
 
+        .information-inner-date{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 5px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid rgba(24, 24, 24, 0.5);
+
+            &__item{
+                position: relative;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 100%;
+                color: #181818;
+                opacity: 0.3;
+                cursor: pointer;
+
+                &--active{
+                    opacity: 1;
+
+                    &:after{
+                        position: absolute;
+                        content:"";
+                        width: 7px;
+                        height: 7px;
+                        left: 0;
+                        right: 0;
+                        text-align: center;
+                        margin: auto;
+                        background: #181818;
+                        border-radius: 50%;
+                        bottom: -9px;
+                    }
+                }
+            }
+        }
+
         .c-information-inner{
             display: flex;
             justify-content: space-between;
@@ -834,6 +896,16 @@ html{
                 line-height: 140%;
                 color: #181818;
                 opacity: 0.8;
+            }
+
+            &__right{
+                &--gap20{
+                    margin:0px -10px;
+
+                    div{
+                        padding:0px 10px;
+                    }
+                }
             }
 
             .information-inner-right{
@@ -2464,23 +2536,6 @@ html{
             margin: 0 15px 0 0;
             border: 1px solid #BAA391;
         }
-
-        &__back{
-            text-decoration: none;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            outline: none;
-            cursor: pointer;
-            width: 285px;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 100%;
-            color: #181818;
-            border: 1px solid #181818;
-        }
     }
 
     &__btns{
@@ -2489,3 +2544,9 @@ html{
         margin-top: 50px;
     }
 }
+
+/* ABOUT PAGE */
+@import "about";
+
+/* LABORATORY BLOCK */
+@import "laboratory";
