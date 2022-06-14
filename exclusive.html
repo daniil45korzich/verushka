@@ -9,8 +9,12 @@
     <link href="css/normalize.min.css" type="text/css" rel="stylesheet">
     <link href="css/swiper-bundle.min.css" type="text/css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="body-exclusive-page">
 <header class="header">
     <div class="container">
         <div class="header-top header__top">
@@ -21,7 +25,7 @@
             </div>
             <div class="header-top__logo">
                 <a href="#">
-                    <img src="img/main/logo-header.svg">
+                    <img src="img/logo-white.svg">
                 </a>
             </div>
             <div class="header-top__icons header-top-icons">
@@ -146,7 +150,7 @@
     </div>
 </header>
 <main>
-    <div class="bg-gray">
+    <div class="bg-black">
         <div class="container">
             <div class="breadcrums">
                 <div class="breadcrums__item">
@@ -159,7 +163,148 @@
         </div>
     </div>
 
-    Exclusive page
+    <section class="ex-main-block">
+        <div class="container">
+            <div class="ex-main-block__wrapper ex-main-block-wrapper">
+                <div class="ex-main-block__left ex-block-left">
+                    <div class="ex-block-left__title1">Специально</div>
+                    <div class="ex-block-left__title2">для вас</div>
+                    <div class="ex-block-left__text">Украшения, созданные по <br>индивидуальному заказу</div>
+                    <a href="#" class="link-btn ex-block-left__link">
+                        <div class="link-btn__name">заказать</div>
+                        <div class="link-btn__arrow link-arrow">
+                            <svg class="link-arrow__self" width="60" height="8" viewBox="0 0 60 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M59.7014 4.35355C59.8966 4.15829 59.8966 3.84171 59.7014 3.64645L56.5194 0.464466C56.3241 0.269204 56.0076 0.269204 55.8123 0.464466C55.617 0.659728 55.617 0.976311 55.8123 1.17157L58.6407 4L55.8123 6.82843C55.617 7.02369 55.617 7.34027 55.8123 7.53553C56.0076 7.7308 56.3241 7.7308 56.5194 7.53553L59.7014 4.35355ZM0 4.5H59.3478V3.5H0V4.5Z" fill="#181818"/>
+                            </svg>
+                            <span class="link-arrow__circle"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="ex-main-block__right ex-block-right">
+                    <div class="ex-block-right__dop"></div>
+                    <div><img src="img/exclusive/exclusive-main.png"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="information m150">
+        <div class="container">
+            <div class="information__inner information-inner">
+                <div class="information-inner__content c-information-inner">
+                    <div class="c-information-inner__left information-inner-left">
+                        <div class="information-inner-left__title title"><span class="title__caption">Создадим любое украшение</span></div>
+                        <div>
+                            <p>
+                                О том, что у нас есть своё производство и оборудование, которое позволяет создать украшение любой сложности по индивидуальному заказу.
+                            </p>
+                            <p>
+                                Текст-заполнитель — это текст, который имеет некоторые характеристики реального письменного текста, но является случайным набором слов или сгенерирован иным образом. Его можно использовать для отображения образца шрифтов, создания текста для тестирования или обхода.
+                            </p>
+                        </div>
+                        <a href="#" class="information__view view-all">Подробнее</a>
+                    </div>
+                    <div class="c-information-inner__right information-inner-right">
+                        <div class="information-inner-right__dop">
+                            <img src="img/exclusive/special-for-you-dop.png">
+                            <span class="information-inner-right__border"></span>
+                        </div>
+                        <img src="img/exclusive/special-for-you.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-feadback m150">
+        <div class="container">
+            <div class="form-feadback__title title"><span class="title__caption">Оставить заявку</span></div>
+            <div class="form-feadback__description">
+                Наш специалит свяжется с вами, чтобы уточнить подробности заказа
+            </div>
+            <form>
+                <div class="form-feadback__wrapper form-feadback-wrapper">
+                    <div class="form-feadback-wrapper__field">
+                        <input type="text" placeholder="Имя" name="name">
+                    </div>
+                    <div class="form-feadback-wrapper__field">
+                        <input type="text" placeholder="Телефон" name="name">
+                    </div>
+                    <div class="form-feadback-wrapper__field">
+                        <input type="text" placeholder="Email" name="name">
+                    </div>
+                </div>
+                <div class="form-feadback__checker">
+                    <div>
+                        <input type="checkbox" class="form-feadback__cheka" id="checker-form">
+                        <div></div>
+                    </div>
+                    <label for="checker-form" class="form-feadback__chekatext">Отправляя свои данные, Вы соглашаетесь с <a href="#">политикой конфиденциальности</a></label>
+                </div>
+                <button class="form-feadback__btn btn-default">Оформить заказ</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="exclusive-our m150">
+        <div class="container">
+            <div class="exclusive-our__title">
+                <div class="exclusive-our-button-prev link-btn link-btn--left">
+                    <div class="link-btn__arrow link-arrow">
+                        <svg class="link-arrow__self" width="60" height="8" viewBox="0 0 60 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M59.7014 4.35355C59.8966 4.15829 59.8966 3.84171 59.7014 3.64645L56.5194 0.464466C56.3241 0.269204 56.0076 0.269204 55.8123 0.464466C55.617 0.659728 55.617 0.976311 55.8123 1.17157L58.6407 4L55.8123 6.82843C55.617 7.02369 55.617 7.34027 55.8123 7.53553C56.0076 7.7308 56.3241 7.7308 56.5194 7.53553L59.7014 4.35355ZM0 4.5H59.3478V3.5H0V4.5Z" fill="#181818"></path>
+                        </svg>
+                        <span class="link-arrow__circle"></span>
+                    </div>
+                </div>
+                <div class="title">
+                    <span class="title__caption">Созданные нами украшения</span>
+                </div>
+                <div class="exclusive-our-button-next link-btn">
+                    <div class="link-btn__arrow link-arrow">
+                        <svg class="link-arrow__self" width="60" height="8" viewBox="0 0 60 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M59.7014 4.35355C59.8966 4.15829 59.8966 3.84171 59.7014 3.64645L56.5194 0.464466C56.3241 0.269204 56.0076 0.269204 55.8123 0.464466C55.617 0.659728 55.617 0.976311 55.8123 1.17157L58.6407 4L55.8123 6.82843C55.617 7.02369 55.617 7.34027 55.8123 7.53553C56.0076 7.7308 56.3241 7.7308 56.5194 7.53553L59.7014 4.35355ZM0 4.5H59.3478V3.5H0V4.5Z" fill="#181818"></path>
+                        </svg>
+                        <span class="link-arrow__circle"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="exclusive-our__wrapper exclusive-our-wrapper">
+                <div class="swiper exclusiveOurSlider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide exclusive-our-wrapper__item exclusive-our-item">
+                            <div class="exclusive-our-item__photo">
+                                <div><img src="img/exclusive/example-1.jpg"></div>
+                                <div><img src="img/exclusive/example-2.png"></div>
+                            </div>
+                            <div class="exclusive-our-item__content exclusive-our-item-content">
+                                <div class="exclusive-our-item-content__title title">
+                                    <span class="title__caption">Серьги с инкрустацией</span>
+                                </div>
+                                <div class="exclusive-our-item-content__text">
+                                    Текст-заполнитель — это текст, который имеет некоторые характеристики реального письменного текста, но является случайным набором слов или сгенерирован иным образом. Его можно использовать для отображения образца шрифтов, создания текста для тестирования или обхода.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide exclusive-our-wrapper__item exclusive-our-item">
+                            <div class="exclusive-our-item__photo">
+                                <div><img src="img/exclusive/example-1.jpg"></div>
+                                <div><img src="img/exclusive/example-2.png"></div>
+                            </div>
+                            <div class="exclusive-our-item__content exclusive-our-item-content">
+                                <div class="exclusive-our-item-content__title title">
+                                    <span class="title__caption">Серьги с инкрустацией</span>
+                                </div>
+                                <div class="exclusive-our-item-content__text">
+                                    Текст-заполнитель — это текст, который имеет некоторые характеристики реального письменного текста, но является случайным набором слов или сгенерирован иным образом. Его можно использовать для отображения образца шрифтов, создания текста для тестирования или обхода.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="subscription m150">
         <div class="container">
@@ -270,6 +415,16 @@
             prevEl: ".laboratory-button-prev",
         },
     });
+
+    const exclusiveOurSlider = new Swiper(".exclusiveOurSlider", {
+        slidesPerView: 1,
+        loop: true,
+        navigation: {
+            nextEl: ".exclusive-our-button-next",
+            prevEl: ".exclusive-our-button-prev",
+        },
+    });
+
 </script>
 </body>
 </html>

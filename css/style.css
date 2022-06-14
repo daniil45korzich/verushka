@@ -730,6 +730,9 @@ html {
 .information .information-inner .c-information-inner__right--gap20 div {
   padding: 0px 10px;
 }
+.information .information-inner .c-information-inner .information-inner-left__title {
+  text-align: left;
+}
 .information .information-inner .c-information-inner .information-inner-right {
   position: relative;
 }
@@ -2216,4 +2219,186 @@ html {
   max-width: 400px;
   width: 100%;
   height: max-content;
+}
+/* EXCLUSIVE PAGE */
+/* MAIN */
+.body-exclusive-page .header {
+  background: #1D1D1D;
+}
+.body-exclusive-page .header .header-bottom .header-bottom-list__item a {
+  color: #F4F4F4;
+}
+.bg-black {
+  background: #1D1D1D;
+}
+.bg-black .breadcrums__item {
+  color: #F4F4F4;
+}
+.bg-black .breadcrums a {
+  color: #868686;
+}
+/* EXL MAIN BLOCK */
+.ex-main-block {
+  background: #1D1D1D;
+  padding-bottom: 70px;
+  padding-top: 25px;
+}
+.ex-main-block-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.ex-main-block-wrapper .ex-block-left__title1 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 95px;
+  line-height: 115px;
+  color: #FAFAFA;
+  margin-top: 80px;
+  font-family: 'Cormorant Garamond', serif;
+}
+.ex-main-block-wrapper .ex-block-left__title2 {
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 84px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #FAFAFA;
+  width: 520px;
+}
+.ex-main-block-wrapper .ex-block-left__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  margin: 35px auto 0px;
+  max-width: 225px;
+  color: #FFFFFF;
+}
+.ex-main-block-wrapper .ex-block-left__link {
+  margin-top: 70px;
+}
+.ex-main-block-wrapper .ex-block-left__link .link-btn__name {
+  border-bottom: none;
+  color: #FAFAFA;
+}
+.ex-main-block-wrapper .ex-block-left__link svg path {
+  fill: #FAFAFA;
+}
+.ex-main-block-wrapper .ex-block-left__link .link-arrow__circle {
+  border-color: #F4F4F4;
+}
+/* OUR BLOCK */
+.exclusive-our__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.exclusive-our .exclusive-our-item {
+  display: flex;
+  justify-content: space-between;
+}
+.exclusive-our .exclusive-our-item__photo {
+  display: flex;
+  margin: 0 -10px;
+}
+.exclusive-our .exclusive-our-item__photo div {
+  display: flex;
+  align-items: end;
+  padding: 0 10px;
+}
+.exclusive-our .exclusive-our-item__photo div:last-child img {
+  border-radius: 0px 100px 0px 0px;
+  overflow: hidden;
+}
+.exclusive-our .exclusive-our-item .exclusive-our-item-content {
+  max-width: 400px;
+  padding-top: 30px;
+}
+.exclusive-our .exclusive-our-item .exclusive-our-item-content__title {
+  text-align: left;
+  font-size: 24px;
+}
+.exclusive-our .exclusive-our-item .exclusive-our-item-content__text {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #181818;
+  opacity: 0.7;
+}
+/* FORM */
+.form-feadback {
+  background: #181818;
+  padding: 40px 0px 68px;
+}
+.form-feadback__title {
+  margin-top: 0px;
+  color: #FFFFFF;
+}
+.form-feadback__description {
+  max-width: 500px;
+  margin: 10px auto 40px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  color: #F4F4F4;
+  opacity: 0.7;
+}
+.form-feadback__checker {
+  display: flex;
+  margin-top: 35px;
+}
+.form-feadback__cheka {
+  opacity: 0;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.form-feadback__cheka + div {
+  border: 1px solid #F4F4F4;
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+}
+.form-feadback__cheka:checked + div {
+  background: #F4F4F4;
+}
+.form-feadback__chekatext {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 115%;
+  color: #F4F4F4;
+  cursor: pointer;
+  max-width: 305px;
+}
+.form-feadback__chekatext a {
+  color: #F4F4F4;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+.form-feadback__btn {
+  color: #181818;
+  opacity: 1;
+  background: #F4F4F4;
+  margin-top: 40px;
+}
+.form-feadback .form-feadback-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.form-feadback .form-feadback-wrapper__field input {
+  outline: none;
+  border: none;
+  background: none;
+  padding: 10px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 115%;
+  color: #F4F4F4;
+  width: 100%;
+  opacity: 0.5;
+  border-bottom: 1px solid rgba(244, 244, 244, 0.5);
 }
