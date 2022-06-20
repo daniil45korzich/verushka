@@ -9,6 +9,7 @@
     <link href="css/normalize.min.css" type="text/css" rel="stylesheet">
     <link href="css/swiper-bundle.min.css" type="text/css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/animate.css" type="text/css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -725,7 +726,7 @@
                                 Все началось с небольшого магазина украшений и постепенно развилось в бренд украшений ручной работы.</div>
                             <a href="#" class="information__view view-all">Подробнее</a>
                         </div>
-                        <div class="c-information-inner__right information-inner-right">
+                        <div class="c-information-inner__right information-inner-right wow fadeIn">
                             <div class="information-inner-right__dop">
                                 <img src="img/main/info-block-photo-dop.png">
                                 <span class="information-inner-right__border"></span>
@@ -749,13 +750,13 @@
                 </a>
 
                 <div class="catalog__list">
-                    <a href="#" class="catalog-item">
+                    <a href="#" class="catalog-item wow slideInLeft">
                         <img src="img/main/you-product-1.png" class="catalog-item__image catalog-item__image--left">
                     </a>
-                    <a href="#" class="catalog-item">
+                    <a href="#" class="catalog-item wow fadeIn">
                         <img src="img/main/you-product-2.png" class="catalog-item__image catalog-item__image--center">
                     </a>
-                    <a href="#" class="catalog-item">
+                    <a href="#" class="catalog-item wow slideInRight">
                         <img src="img/main/you-product-3.png" class="catalog-item__image catalog-item__image--right">
                     </a>
                 </div>
@@ -901,11 +902,15 @@
     </footer>
     <script src="js/swiper-bundle.min.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/wow.min.js" type="text/javascript"></script>
     <script>
       const bannerSlider = new Swiper(".bannerSlider", {
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+        autoplay: {
+          delay: 5000,
         },
       });
 
@@ -914,6 +919,9 @@
           navigation: {
               nextEl: ".collections-button-next",
               prevEl: ".collections-button-prev",
+          },
+          autoplay: {
+              delay: 5000,
           },
       });
 
@@ -925,6 +933,9 @@
             nextEl: ".cat1-button-next",
             prevEl: ".cat1-button-prev",
           },
+          autoplay: {
+              delay: 5000,
+          },
       });
 
       const categoryListSliderCat2 = new Swiper(".categoryListSlider--cat2", {
@@ -934,6 +945,9 @@
           navigation: {
               nextEl: ".cat2-button-next",
               prevEl: ".cat2-button-prev",
+          },
+          autoplay: {
+              delay: 5000,
           },
       });
 
@@ -945,6 +959,9 @@
           nextEl: ".product-hit-button-next",
           prevEl: ".product-hit-button-prev",
         },
+          autoplay: {
+              delay: 5000,
+          },
       });
 
       const productListSliderNew = new Swiper(".productListSlider--new", {
@@ -955,7 +972,12 @@
               nextEl: ".product-new-button-next",
               prevEl: ".product-new-button-prev",
           },
+          autoplay: {
+              delay: 5000,
+          },
       });
+      var wow = new WOW();
+      wow.init();
     </script>
 </body>
 </html>
