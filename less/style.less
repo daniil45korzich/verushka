@@ -573,6 +573,52 @@ h1.title{
 
     .catalog-menu{
         display: none;
+        border-top: 1px solid rgba(134, 134, 134, 0.5);
+        padding-top: 20px;
+        padding-bottom: 30px;
+
+        .i-catalog-menu{
+            display: grid;
+            grid-template-columns: 202px 1fr;
+            grid-gap: 100px;
+
+            &__content{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-column-gap: 20px;
+                grid-row-gap: 15px;
+            }
+        }
+
+        &.active{
+            display: block;
+        }
+    }
+
+    .menu-content-item{
+        position: relative;
+
+        img{
+            display: block;
+        }
+
+        &__name{
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(image.png);
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 120%;
+            text-align: center;
+            text-transform: uppercase;
+            color: #EFEDEC;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
 
@@ -649,6 +695,7 @@ h1.title{
             margin-bottom: 30px;
 
             div{
+                transition: 0.2s all;
                 cursor: pointer;
                 font-weight: 400;
                 font-size: 35px;
@@ -659,8 +706,9 @@ h1.title{
                 opacity: 0.3;
                 position: relative;
 
-                &.active{
+                &.active,&:hover{
                     opacity: 1;
+                    transition: 0.2s all;
                 }
 
                 &:not(:last-child){
@@ -829,8 +877,9 @@ h1.title{
                 opacity: 0.3;
                 position: relative;
 
-                &.active{
+                &.active,&:hover{
                     opacity: 1;
+                    transition: 0.2s all;
                 }
 
                 &:not(:last-child){
