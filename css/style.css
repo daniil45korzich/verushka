@@ -1052,6 +1052,9 @@ h1.title {
   line-height: 115%;
   color: #868686;
 }
+.footer .footer-inner-bottom__policy {
+  text-align: right;
+}
 .footer .footer-inner-bottom__policy a {
   font-weight: 400;
   font-size: 14px;
@@ -2280,6 +2283,27 @@ h1.title {
   display: flex;
   align-items: center;
   margin-top: 50px;
+}
+.copyright {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 120%;
+  color: #303030;
+}
+.copyright__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 15px;
+}
+.copyright__logo img {
+  height: 30px;
+}
+.copyright__logo span {
+  font-size: 12px;
 }
 /* ABOUT PAGE */
 .body-about-page .header,
