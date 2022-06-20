@@ -473,6 +473,14 @@
     const collectionSinglePhotos = new Swiper(".collection-single__photos", {
         slidesPerView: 3,
         loop: true,
+        breakpoints: {
+            320: {
+                spaceBetween: 20,
+            },
+            1366: {
+                spaceBetween: 0,
+            }
+        }
     });
 
     const productСaruselSlider = new Swiper(".productСaruselSlider", {
