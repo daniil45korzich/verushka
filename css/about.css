@@ -120,6 +120,18 @@
   opacity: 0.7;
   text-align: left;
 }
+.info-block .info-block-content__text--width450 {
+  max-width: 450px;
+  width: 100%;
+}
+.info-block .info-block-content__text--width480 {
+  max-width: 480px;
+  width: 100%;
+}
+.info-block .info-block-content--width420 {
+  max-width: 420px;
+  width: 100%;
+}
 .clients .clients-item__text {
   font-weight: 400;
   font-size: 18px;
