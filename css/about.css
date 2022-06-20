@@ -1,3 +1,4 @@
+/* MEDIA */
 .body-about-page .header,
 .body-about-page .bg-gray {
   background: #F4F4F4;
@@ -138,6 +139,11 @@
   line-height: 100%;
   color: #181818;
   margin-top: 15px;
+}
+@media screen and (max-width: 1340px) {
+  .clients .clients-item img {
+    width: 100%;
+  }
 }
 .clients__title {
   margin-bottom: 20px;

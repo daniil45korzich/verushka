@@ -1,3 +1,7 @@
+/* MEDIA */
+@notebook:   ~"screen and (max-width: 1340px)";
+@netbook:   ~"screen and (max-width: 1279px)";
+
 .body-about-page{
   .header,
   .bg-gray
@@ -175,6 +179,12 @@
       line-height: 100%;
       color: #181818;
       margin-top:15px;
+    }
+
+    @media @notebook{
+      img{
+        width: 100%;
+      }
     }
   }
 

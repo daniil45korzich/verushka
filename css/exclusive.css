@@ -1,3 +1,4 @@
+/* MEDIA */
 /* MAIN */
 .body-exclusive-page .header {
   background: #1D1D1D;
@@ -36,6 +37,11 @@
   display: block;
   position: relative;
   z-index: 2;
+}
+@media screen and (max-width: 1340px) {
+  .ex-block-right {
+    display: none;
+  }
 }
 .ex-main-block-wrapper {
   display: flex;
