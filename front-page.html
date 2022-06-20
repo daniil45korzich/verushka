@@ -196,7 +196,9 @@
                             </div>
                           </div>
                         </div>
-                        <div class="swiper-pagination"></div>
+                        <div class="container">
+                            <div class="swiper-pagination"></div>
+                        </div>
                       </div>
                 </div>
         </section>
@@ -528,7 +530,7 @@
                             </div>
                         </div>
                         <div class="title">
-                            <span class="title__caption">Коллекции</span>
+                            <span class="title__caption title__caption--big">Коллекции</span>
                         </div>
                         <div class="collections-button-next link-btn">
                             <div class="link-btn__arrow link-arrow">
@@ -716,7 +718,7 @@
         <section class="information m150">
             <div class="container">
                 <div class="information__inner information-inner">
-                    <div class="information-inner__title title">Украшения VERUSCHKA – ощущение праздника в каждом дне</div>
+                    <div class="information-inner__title title"><span class="title__caption title__caption--big">Украшения VERUSCHKA – ощущение праздника в каждом дне</span></div>
                     <div class="information-inner__content c-information-inner">
                         <div class="c-information-inner__left">
                             <div>Бренд VERUSCHKA появился в 2015 году в Казани на волне стремительно растущего количества локальных дизайнеров в качестве «пробы пера» создать что-то уникальное.
@@ -737,7 +739,7 @@
 
         <section class="catalog m150">
             <div class="container">
-                <div class="title"><span class="title__caption">Выбери своё украшение</span></div>
+                <div class="title"><span class="title__caption title__caption--big">Выбери своё украшение</span></div>
                 <a href="#" class="catalog__link link-btn">
                     <div class="link-btn__name">Каталог</div>
                     <div class="link-btn__arrow link-arrow">
@@ -869,7 +871,7 @@
                         <div class="footer-info-block">
                             <div class="footer-info-block__name">Почта</div>
                             <div class="footer-info-block__content c-footer-info-block">
-                                info.veruschka@gmail.com
+                                <span>info.veruschka@gmail.com</span>
                                 <div class="c-footer-info-block__social footer-social">
                                     <div class="footer-social__item">
                                         <a href="#"><img src="img/main/icon-telegram.png"></a>
@@ -903,6 +905,7 @@
       const bannerSlider = new Swiper(".bannerSlider", {
         pagination: {
           el: ".swiper-pagination",
+          clickable: true,
         },
       });
 
