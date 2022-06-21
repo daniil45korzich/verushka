@@ -1,6 +1,7 @@
 /* MEDIA */
 @notebook:   ~"screen and (max-width: 1340px)";
 @netbook:   ~"screen and (max-width: 1279px)";
+@phone:   ~"screen and (max-width: 1020px)";
 
 /* FONTS */
 @font-face {
@@ -61,6 +62,11 @@ html{
     &__caption{
         &--big{
             font-size: 35px;
+
+            @media @phone{
+                font-size: 22px;
+                line-height: 25px;
+            }
         }
     }
 }
@@ -538,6 +544,16 @@ h1.title{
                 margin-right: -5px;
             }
         }
+
+        &__logo{
+            @media @phone{
+                max-width: 123px;
+            }
+
+            img{
+                width: 100%;
+            }
+        }
     }
 
     .header-bottom{
@@ -577,6 +593,9 @@ h1.title{
                     background-blend-mode: color, normal, normal;
                 }
             }
+        }
+        @media @phone{
+            display: none;
         }
     }
 
@@ -732,6 +751,10 @@ h1.title{
                         right: -24px;
                         top: -2px;
                     }
+                }
+                @media @phone{
+                    font-size: 20px;
+                    line-height: 24px;
                 }
             }
         }
@@ -916,6 +939,11 @@ h1.title{
                         top: -2px;
                     }
                 }
+
+                @media @phone{
+                    font-size: 20px;
+                    line-height: 24px;
+                }
             }
         }
     }
@@ -966,6 +994,12 @@ h1.title{
 /* INTERECTIVE BLOCK */
 .interractive-block{
     text-align: center;
+
+    @media @phone{
+        img{
+            width: 100%;
+        }
+    }
 }
 
 
@@ -1006,6 +1040,10 @@ h1.title{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+
+                @media @phone{
+                    order: 2;
+                }
             }
 
             &--image{
@@ -1016,12 +1054,20 @@ h1.title{
                     max-width: 590px;
                     width: 100%;
                 }
+
+                @media @phone{
+                    order: 1;
+                }
             }
 
             &--last{
                 display: flex;
                 flex-direction: column;
                 justify-content: end;
+
+                @media @phone{
+                    order: 3;
+                }
             }
         }
 
@@ -1125,6 +1171,9 @@ h1.title{
                     position: relative;
                     z-index: 2;
                     display: block;
+                    @media @phone{
+                        max-width: 220px;
+                    }
                 }
 
                 &__dop{
@@ -1141,7 +1190,15 @@ h1.title{
                     @media @netbook{
                         display: none;
                     }
+
+                    @media @phone{
+                        display: block;
+                    }
                 }
+            }
+
+            @media @phone{
+                flex-direction: column-reverse;
             }
         }
     }
@@ -1169,6 +1226,16 @@ h1.title{
 
         @media @netbook{
             gap: 20px;
+        }
+
+        @media @phone{
+            width: 1200px;
+        }
+    }
+
+    @media @phone{
+        &__overflow{
+            overflow: auto;
         }
     }
 
@@ -1204,6 +1271,10 @@ h1.title{
             width: 100%;
             object-fit: cover;
         }
+
+        @media @phone{
+            max-width: 100%;
+        }
     }
 
     &__item{
@@ -1231,6 +1302,14 @@ h1.title{
         color: #000000;
         opacity: 0.5;
         margin-top:10px;
+    }
+
+    @media @phone{
+        display: flex;
+
+        .swiper-slide{
+            display: block;
+        }
     }
 }
 
@@ -1336,6 +1415,10 @@ h1.title{
                     }
                 }
             }
+        }
+
+        @media @phone{
+            flex-direction: column-reverse;
         }
     }
     .footer-inner-bottom{
