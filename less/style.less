@@ -50,6 +50,10 @@ html{
 
 .mt100{
     margin-top:100px;
+
+    @media @phone{
+        margin-top: 0;
+    }
 }
 
 .flex{
@@ -1267,6 +1271,11 @@ h1.title{
                         bottom: -9px;
                     }
                 }
+
+                @media @phone{
+                    font-weight: 400;
+                    font-size: 14px;
+                }
             }
         }
 
@@ -1304,6 +1313,10 @@ h1.title{
 
                     div{
                         padding:0px 10px;
+
+                        @media @phone{
+                            padding:0px 5px;
+                        }
                     }
                 }
             }
@@ -1339,8 +1352,13 @@ h1.title{
                     position: relative;
                     z-index: 2;
                     display: block;
-                    @media @phone{
+
+                    @media @netbook{
                         max-width: 220px;
+                    }
+
+                    @media @phone{
+                        max-width: 145px;
                     }
                 }
 
@@ -1390,7 +1408,7 @@ h1.title{
         margin-left: 0;
     }
     @media @phone{
-        padding-bottom: 80px;
+        padding-bottom: 0px;
     }
 }
 
