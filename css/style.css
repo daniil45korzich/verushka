@@ -1707,6 +1707,12 @@ h1.title {
   margin-top: 25px;
   display: block;
 }
+@media screen and (max-width: 1020px) {
+  .product-single__view {
+    margin-bottom: 60px;
+    bottom: -115px;
+  }
+}
 .product-single .thumbsSlider {
   margin-top: 10px;
 }
@@ -1722,9 +1728,19 @@ h1.title {
 .product-single__wrapper {
   display: flex;
 }
+@media screen and (max-width: 1020px) {
+  .product-single__wrapper {
+    flex-direction: column;
+  }
+}
 .product-single__image {
   width: 690px;
   margin-right: 60px;
+}
+@media screen and (max-width: 1020px) {
+  .product-single__image {
+    width: 100%;
+  }
 }
 .product-single .product-content__title {
   font-weight: 400;
@@ -1733,6 +1749,13 @@ h1.title {
   color: #181818;
   margin: 0;
 }
+@media screen and (max-width: 1020px) {
+  .product-single .product-content__title {
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 50px;
+  }
+}
 .product-single .product-content__description {
   font-weight: 400;
   font-size: 16px;
@@ -1740,6 +1763,12 @@ h1.title {
   color: #181818;
   margin-top: 10px;
   opacity: 0.4;
+}
+@media screen and (max-width: 1020px) {
+  .product-single .product-content__description {
+    font-weight: 400;
+    font-size: 14px;
+  }
 }
 .product-single .product-content__option {
   margin-top: 20px;
@@ -1811,6 +1840,16 @@ h1.title {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 1020px) {
+  .product-single .product-content__btns {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .product-single .product-content__btns .btn-add-cart {
+    margin: auto;
+  }
+}
 .product-single .product-content .product-content-hint {
   transition: 0.2s all;
   display: flex;
@@ -1819,6 +1858,12 @@ h1.title {
   margin-top: 13px;
   justify-content: center;
   cursor: pointer;
+}
+@media screen and (max-width: 1020px) {
+  .product-single .product-content .product-content-hint {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .product-single .product-content .product-content-hint__image {
   margin-right: 5px;
@@ -1830,6 +1875,12 @@ h1.title {
   line-height: 115%;
   color: #181818;
   opacity: 0.6;
+}
+@media screen and (max-width: 1020px) {
+  .product-single .product-content .product-content-hint__text {
+    font-weight: 400;
+    font-size: 12px;
+  }
 }
 .product-single .product-content .product-content-hint:hover {
   transition: 0.2s all;
@@ -1891,6 +1942,11 @@ h1.title {
   display: flex;
   align-items: center;
   text-decoration: none;
+}
+@media screen and (max-width: 1020px) {
+  .product-single .btn-add-wishlist {
+    margin-top: 15px;
+  }
 }
 .product-single .btn-add-wishlist__text {
   margin-left: 7px;
