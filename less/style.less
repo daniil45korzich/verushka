@@ -2874,6 +2874,12 @@ h1.title{
         opacity: 0.8;
         margin:20px auto 50px;
         max-width: 560px;
+
+        @media @phone{
+            font-weight: 400;
+            font-size: 16px;
+            padding: 0px 15px;
+        }
     }
 
     &__photos{
@@ -2898,6 +2904,11 @@ h1.title{
 
     &__view{
         margin-top: 50px;
+
+        @media @phone{
+            max-width: 100%;
+            margin-top: 30px;
+        }
     }
 
     .cat-button-next{
@@ -2978,10 +2989,20 @@ h1.title{
     text-align: center;
     color: rgba(24, 24, 24, 0.8);
 
+    @media @phone{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
     &__container{
         padding:35px 0px;
         border-top: 1px solid rgba(24, 24, 24, 0.5);
         border-bottom: 1px solid rgba(24, 24, 24, 0.5);
+
+        @media @phone{
+            padding:60px 10px;
+        }
     }
 
     &__caption{
@@ -3002,12 +3023,21 @@ h1.title{
         &:before{
             left: -50px;
             top: -25px;
+
+            @media @phone{
+                left: 0px;
+                top: -45px;
+            }
         }
 
         &:after{
             right: -50px;
             bottom: -25px;
             transform: rotate(180deg);
+
+            @media @phone{
+                right: 0px;
+            }
         }
     }
 }

@@ -15,6 +15,11 @@
 <header class="header">
     <div class="container">
         <div class="header-top header__top">
+            <div class="header-top__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="header-top__lang header-top-lang">
                 <div class="header-top-lang__item header-top-lang__item--active">ru</div>
                 <div class="header-top-lang__item">en</div>
@@ -484,23 +489,37 @@
     });
 
     const productСaruselSlider = new Swiper(".productСaruselSlider", {
-        slidesPerView: 4,
         spaceBetween: 20,
         loop: true,
         navigation: {
             nextEl: ".product-carusel-button-next",
             prevEl: ".product-carusel-button-prev",
         },
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+            },
+            1020: {
+                slidesPerView: 4,
+            }
+        }
     });
 
     const categoryListSliderPage = new Swiper(".categoryListSliderPage", {
-        slidesPerView: 3,
         spaceBetween: 30,
         loop: true,
         navigation: {
             nextEl: ".cat-page-button-next",
             prevEl: ".cat-page-button-prev",
         },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            1020: {
+                slidesPerView: 3,
+            }
+        }
     });
 
 </script>
