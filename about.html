@@ -372,38 +372,51 @@
     <section class="blog m150">
         <div class="container">
             <div class="title">
-                <span class="title__caption title__caption--big">Блог</span>
+                <span class="title__caption">Блог</span>
             </div>
-            <div class="blog__list blog-list">
-                <a href="#" class="blog-list__item">
-                    <div class="blog-list__image">
-                        <img src="img/main/blog-1.jpg">
+
+            <div class="blog__list blog-list swiper noGridDesktop">
+                <div class="swiper-wrapper blog-list__swiper">
+                    <div class="swiper-slide">
+                        <a href="#" class="blog-list__item">
+                            <div class="blog-list__image">
+                                <img src="img/main/blog-1.jpg">
+                            </div>
+                            <div class="blog-list__name">Новости номер один Текст-заполнитель </div>
+                            <div class="blog-list__date">17.05.22</div>
+                        </a>
                     </div>
-                    <div class="blog-list__name">Новости номер один Текст-заполнитель </div>
-                    <div class="blog-list__date">17.05.22</div>
-                </a>
-                <a href="#" class="blog-list__item">
-                    <div class="blog-list__image">
-                        <img src="img/main/blog-2.jpg">
+                    <div class="swiper-slide">
+                        <a href="#" class="blog-list__item">
+                            <div class="blog-list__image">
+                                <img src="img/main/blog-2.jpg">
+                            </div>
+                            <div class="blog-list__name">Новости номер один Текст-заполнитель </div>
+                            <div class="blog-list__date">17.05.22</div>
+                        </a>
                     </div>
-                    <div class="blog-list__name">Новости номер один Текст-заполнитель </div>
-                    <div class="blog-list__date">17.05.22</div>
-                </a>
-                <a href="#" class="blog-list__item">
-                    <div class="blog-list__image">
-                        <img src="img/main/blog-3.jpg">
+                    <div class="swiper-slide">
+                        <a href="#" class="blog-list__item">
+                            <div class="blog-list__image">
+                                <img src="img/main/blog-3.jpg">
+                            </div>
+                            <div class="blog-list__name">Новости номер один Текст-заполнитель </div>
+                            <div class="blog-list__date">17.05.22</div>
+                        </a>
                     </div>
-                    <div class="blog-list__name">Новости номер один Текст-заполнитель </div>
-                    <div class="blog-list__date">17.05.22</div>
-                </a>
-                <a href="#" class="blog-list__item">
-                    <div class="blog-list__image">
-                        <img src="img/main/blog-4.jpg">
+                    <div class="swiper-slide">
+                        <a href="#" class="blog-list__item">
+                            <div class="blog-list__image">
+                                <img src="img/main/blog-4.jpg">
+                            </div>
+                            <div class="blog-list__name">Новости номер один Текст-заполнитель </div>
+                            <div class="blog-list__date">17.05.22</div>
+                        </a>
                     </div>
-                    <div class="blog-list__name">Новости номер один Текст-заполнитель </div>
-                    <div class="blog-list__date">17.05.22</div>
-                </a>
+                </div>
             </div>
+
+            <div class="blog-list-pagination"></div>
         </div>
     </section>
 
@@ -513,12 +526,20 @@
 <script src="js/main.js" type="text/javascript"></script>
 <script>
     const clientsSlider = new Swiper(".clientsSlider", {
-        slidesPerView: 4,
         spaceBetween: 20,
         loop: true,
         navigation: {
             nextEl: ".clients-button-next",
             prevEl: ".clients-button-prev",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+                centeredSlides: true,
+            },
+            1021: {
+                slidesPerView: 4,
+            }
         },
     });
 
@@ -530,6 +551,23 @@
             nextEl: ".about-button-next",
             prevEl: ".about-button-prev",
         },
+    });
+
+    window.addEventListener("load", function () {
+        const widthWidnow = window.innerWidth;
+        if (widthWidnow <= 1020) {
+            const blogList = new Swiper(".blog-list", {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                pagination: {
+                    el: ".blog-list-pagination",
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 5000,
+                },
+            });
+        }
     });
 </script>
 </body>
