@@ -15,6 +15,11 @@
     <header class="header">
         <div class="container">
             <div class="header-top header__top">
+                <div class="header-top__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="header-top__lang header-top-lang">
                     <div class="header-top-lang__item header-top-lang__item--active">ru</div>
                     <div class="header-top-lang__item">en</div>
@@ -202,6 +207,48 @@
                         </div>
                       </div>
                 </div>
+        </section>
+
+        <section class="banner-mobi">
+            <div class="bannerMobiMain swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/banner-mobi.jpg">
+                        <div class="banner-mobi__content banner-mobi-content">
+                            <div class="banner-mobi-content__text">Exlusive</div>
+                            <div class="banner-mobi-content__arrow">
+                                <a href="#" class="link-btn bannerSlider__link">
+                                    <div class="link-btn__name">Каталог</div>
+                                    <div class="link-btn__arrow link-arrow">
+                                        <svg class="link-arrow__self" width="60" height="8" viewBox="0 0 60 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M59.7014 4.35355C59.8966 4.15829 59.8966 3.84171 59.7014 3.64645L56.5194 0.464466C56.3241 0.269204 56.0076 0.269204 55.8123 0.464466C55.617 0.659728 55.617 0.976311 55.8123 1.17157L58.6407 4L55.8123 6.82843C55.617 7.02369 55.617 7.34027 55.8123 7.53553C56.0076 7.7308 56.3241 7.7308 56.5194 7.53553L59.7014 4.35355ZM0 4.5H59.3478V3.5H0V4.5Z" fill="#181818"/>
+                                        </svg>
+                                        <span class="link-arrow__circle"></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/banner-mobi.jpg">
+                        <div class="banner-mobi__content banner-mobi-content">
+                            <div class="banner-mobi-content__text">Exlusive</div>
+                            <div class="banner-mobi-content__arrow">
+                                <a href="#" class="link-btn bannerSlider__link">
+                                    <div class="link-btn__name">Каталог</div>
+                                    <div class="link-btn__arrow link-arrow">
+                                        <svg class="link-arrow__self" width="60" height="8" viewBox="0 0 60 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M59.7014 4.35355C59.8966 4.15829 59.8966 3.84171 59.7014 3.64645L56.5194 0.464466C56.3241 0.269204 56.0076 0.269204 55.8123 0.464466C55.617 0.659728 55.617 0.976311 55.8123 1.17157L58.6407 4L55.8123 6.82843C55.617 7.02369 55.617 7.34027 55.8123 7.53553C56.0076 7.7308 56.3241 7.7308 56.5194 7.53553L59.7014 4.35355ZM0 4.5H59.3478V3.5H0V4.5Z" fill="#181818"/>
+                                        </svg>
+                                        <span class="link-arrow__circle"></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-mobi-pagination"></div>
+            </div>
         </section>
 
         <section class="category-tabs m150">
@@ -764,46 +811,55 @@
             </div>
         </section>
 
+
         <section class="blog m150">
             <div class="container">
                 <div class="title">
                     <span class="title__caption">Блог</span>
                 </div>
-                <div class="swiper blogListMainMobileSlider">
-                    <div class="blog__list blog-list swiper-wrapper">
-                        <a href="#" class="swiper-slide blog-list__item">
-                            <div class="blog-list__image">
-                                <img src="img/main/blog-1.jpg">
-                            </div>
-                            <div class="blog-list__name">Новости номер один Текст-заполнитель </div>
-                            <div class="blog-list__date">17.05.22</div>
-                        </a>
-                        <a href="#" class="swiper-slide blog-list__item">
-                            <div class="blog-list__image">
-                                <img src="img/main/blog-2.jpg">
-                            </div>
-                            <div class="blog-list__name">Новости номер один Текст-заполнитель </div>
-                            <div class="blog-list__date">17.05.22</div>
-                        </a>
-                        <a href="#" class="swiper-slide blog-list__item">
-                            <div class="blog-list__image">
-                                <img src="img/main/blog-3.jpg">
-                            </div>
-                            <div class="blog-list__name">Новости номер один Текст-заполнитель </div>
-                            <div class="blog-list__date">17.05.22</div>
-                        </a>
-                        <a href="#" class="swiper-slide blog-list__item">
-                            <div class="blog-list__image">
-                                <img src="img/main/blog-4.jpg">
-                            </div>
-                            <div class="blog-list__name">Новости номер один Текст-заполнитель </div>
-                            <div class="blog-list__date">17.05.22</div>
-                        </a>
+
+                <div class="blog__list blog-list swiper noGridDesktop">
+                    <div class="swiper-wrapper blog-list__swiper">
+                        <div class="swiper-slide">
+                            <a href="#" class="blog-list__item">
+                                <div class="blog-list__image">
+                                    <img src="img/main/blog-1.jpg">
+                                </div>
+                                <div class="blog-list__name">Новости номер один Текст-заполнитель </div>
+                                <div class="blog-list__date">17.05.22</div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="blog-list__item">
+                                <div class="blog-list__image">
+                                    <img src="img/main/blog-2.jpg">
+                                </div>
+                                <div class="blog-list__name">Новости номер один Текст-заполнитель </div>
+                                <div class="blog-list__date">17.05.22</div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="blog-list__item">
+                                <div class="blog-list__image">
+                                    <img src="img/main/blog-3.jpg">
+                                </div>
+                                <div class="blog-list__name">Новости номер один Текст-заполнитель </div>
+                                <div class="blog-list__date">17.05.22</div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="blog-list__item">
+                                <div class="blog-list__image">
+                                    <img src="img/main/blog-4.jpg">
+                                </div>
+                                <div class="blog-list__name">Новости номер один Текст-заполнитель </div>
+                                <div class="blog-list__date">17.05.22</div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="swiper-pagination"></div>
                 </div>
 
-                <a href="#" class="blog__view view-all">Смотреть все</a>
+                <div class="blog-list-pagination"></div>
             </div>
         </section>
 
@@ -977,14 +1033,6 @@
       window.addEventListener("load", function () {
           const widthWidnow = window.innerWidth;
           if (widthWidnow <= 1020) {
-              const blogListMainMobileSlider = new Swiper(".blogListMainMobileSlider", {
-                  slidesPerView: 2,
-                  spaceBetween: 10,
-                  pagination: {
-                      el: ".swiper-pagination",
-                      clickable: true,
-                  },
-              });
           } else {
               const categoryListSliderCat1 = new Swiper(".categoryListSlider--cat1", {
                   slidesPerView: 3,
@@ -1009,6 +1057,35 @@
                   },
                   autoplay: {
                       delay: 5000,
+                  },
+              });
+          }
+      });
+
+
+      window.addEventListener("load", function () {
+          const widthWidnow = window.innerWidth;
+          if (widthWidnow <= 1020) {
+              const blogList = new Swiper(".blog-list", {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                  pagination: {
+                      el: ".blog-list-pagination",
+                      clickable: true,
+                  },
+                  autoplay: {
+                      delay: 5000,
+                  },
+              });
+
+              const bannerMobiMain = new Swiper(".bannerMobiMain", {
+                  loop: true,
+                  autoplay: {
+                      delay: 5000,
+                  },
+                  pagination: {
+                      el: ".banner-mobi-pagination",
+                      clickable: true,
                   },
               });
           }
