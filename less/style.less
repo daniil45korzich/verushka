@@ -83,6 +83,12 @@ html{
 
 h1.title{
     font-size: 35px;
+
+    @media @phone{
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 25px;
+    }
 }
 
 .btn{
@@ -255,6 +261,11 @@ h1.title{
         line-height: 115%;
         color: #181818;
 
+        @media @phone{
+            font-weight: 400;
+            font-size: 12px;
+        }
+
         &:not(:last-child){
             margin-right: 10px;
             text-decoration: none;
@@ -262,6 +273,11 @@ h1.title{
             font-size: 16px;
             line-height: 115%;
             color: #868686;
+
+            @media @phone{
+                font-weight: 400;
+                font-size: 12px;
+            }
 
             &:after{
                 content:"/";
@@ -277,6 +293,11 @@ h1.title{
             font-size: 16px;
             line-height: 115%;
             color: #868686;
+
+            @media @phone{
+                font-weight: 400;
+                font-size: 12px;
+            }
         }
 
         &:hover{
@@ -295,6 +316,12 @@ h1.title{
     margin-top: 32px;
     margin-bottom: 48px;
     text-align: center;
+
+    @media @phone{
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 25px;
+    }
 }
 
 /* PAGINATION */
@@ -500,6 +527,25 @@ h1.title{
         border-bottom: 1px solid #868686;
         overflow: hidden;
 
+        &__burger{
+            display: none;
+
+            span{
+                display: block;
+                width: 25px;
+                background: #181818;
+                height: 1px;
+
+                &:not(:last-child){
+                    margin-bottom: 5px;
+                }
+            }
+
+            @media @phone{
+                display: block;
+            }
+        }
+
         .header-top-lang{
             display: flex;
             align-items: end;
@@ -564,6 +610,10 @@ h1.title{
             &__cart{
                 margin-right: -5px;
             }
+
+            @media @phone{
+                justify-content: right;
+            }
         }
 
         &__logo{
@@ -574,6 +624,13 @@ h1.title{
             img{
                 width: 100%;
             }
+        }
+
+        @media @phone{
+            align-items: center;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+
         }
     }
 
@@ -1353,6 +1410,22 @@ h1.title{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
+    
+    &.noGridDesktop{
+        display: block;
+    }
+
+    &__swiper{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        
+        @media @phone{
+            display: flex;
+            grid-gap: 0;
+            gap: 0;
+        }
+    }
 
     &__image{
         max-width: 285px;
@@ -1383,6 +1456,12 @@ h1.title{
         line-height: 100%;
         color: #181818;
         margin-top:12px;
+
+        @media @phone{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+        }
     }
 
     &__date{
@@ -1400,6 +1479,20 @@ h1.title{
         .swiper-slide{
             display: block;
         }
+    }
+}
+
+.blog-list-pagination{
+    display: none;
+
+    @media @phone{
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    .swiper-pagination-bullet{
+        background: #333;
     }
 }
 
@@ -1454,6 +1547,10 @@ h1.title{
     padding-bottom: 15px;
     margin-top: -70px;
 
+    @media @phone{
+        padding-top: 25px;
+    }
+
     .footer-menu{
         list-style: none;
         padding: 0;
@@ -1463,6 +1560,10 @@ h1.title{
 
             &:not(:last-child){
                 margin-bottom: 15px;
+
+                @media @phone{
+                    margin-bottom: 10px;
+                }
             }
 
             a{
@@ -1591,6 +1692,10 @@ h1.title{
         line-height: 100%;
         color: #181818;
         margin-bottom: 10px;
+
+        @media @phone{
+            margin-top: 15px;
+        }
     }
 
     &__content{
@@ -1681,6 +1786,12 @@ h1.title{
                 width: 100%;
                 display: block;
             }
+
+            @media @phone{
+                max-width: unset;
+                width: 100%;
+                margin-top: 20px;
+            }
         }
         .i-blog-content{
             &__name{
@@ -1689,6 +1800,12 @@ h1.title{
                 line-height: 115%;
                 color: #181818;
                 margin-bottom:10px;
+
+                @media @phone{
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 18px;
+                }
             }
 
             &__info{
@@ -1725,6 +1842,12 @@ h1.title{
                 opacity: 0.8;
                 max-width: 441px;
                 margin-top:25px;
+
+                @media @phone{
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 21px;
+                }
             }
 
             &__link{
@@ -1746,6 +1869,10 @@ h1.title{
                     top: ~"calc(50% - 3px)";
                 }
             }
+        }
+
+        @media @phone{
+            flex-direction: column-reverse;
         }
     }
 }
@@ -2127,11 +2254,20 @@ h1.title{
 
     &__share{
         margin-top: 80px;
+
+        @media @phone{
+            margin-top: 40px;
+        }
     }
 
     &__container{
         max-width: 900px;
         margin: 40px auto 0;
+
+        @media @phone{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
 
         p{
             font-weight: 400;
@@ -2139,6 +2275,12 @@ h1.title{
             line-height: 140%;
             color: #181818;
             opacity: 0.7;
+
+            @media @phone{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 21px;
+            }
         }
     }
 }
@@ -2180,6 +2322,11 @@ h1.title{
     color: #181818;
     opacity: 0.9;
 
+    @media @phone{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     &__subtitle{
         font-weight: 400;
         font-size: 18px;
@@ -2188,11 +2335,27 @@ h1.title{
         opacity: 0.7;
         margin: 10px auto 50px;
         text-align: center;
+
+        @media @phone{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+        }
     }
 
     &__undefined{
         text-align: center;
         margin-top: 110px;
+
+        @media @phone{
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+
+            img{
+                width: 100%;
+            }
+        }
     }
 
     &__home{
@@ -2230,6 +2393,12 @@ h1.title{
         text-transform: uppercase;
         color: #181818;
         margin-top: 120px;
+
+        @media @phone{
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 25px;
+        }
     }
 
     &__text{
@@ -2242,6 +2411,12 @@ h1.title{
 
         &--center{
             text-align: center;
+        }
+
+        @media @phone{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
         }
     }
 
@@ -2283,6 +2458,10 @@ h1.title{
                     align-items: center;
                     justify-content: center;
                     margin-right: 10px;
+
+                    @media @phone{
+                        min-width: 30px;
+                    }
                 }
 
                 &:last-child{
@@ -2291,6 +2470,11 @@ h1.title{
                     line-height: 100%;
                     color: #181818;
                     opacity: 0.9;
+
+                    @media @phone{
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -2302,6 +2486,12 @@ h1.title{
         line-height: 140%;
         color: #181818;
         opacity: 0.9;
+
+        @media @phone{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
+        }
     }
 
     h2{
@@ -2312,6 +2502,12 @@ h1.title{
         line-height: 120%;
         text-transform: uppercase;
         color: #181818;
+
+        @media @phone{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+        }
     }
 
     ul li, ol li{
@@ -2320,6 +2516,12 @@ h1.title{
         line-height: 140%;
         color: #181818;
         opacity: 0.9;
+
+        @media  @phone{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
+        }
     }
 
     .base-information-item{
@@ -2355,6 +2557,11 @@ h1.title{
         display: grid;
         grid-template-columns: 225px 1fr;
         grid-gap: 75px;
+
+        @media @phone{
+            grid-template-columns: 1fr;
+            grid-gap: 30px;
+        }
     }
 
     &__info{
@@ -2393,6 +2600,10 @@ h1.title{
 
         &:not(:last-child){
             margin-bottom: 80px;
+
+            @media @phone{
+                margin-bottom: 40px;
+            }
         }
 
         &__image{
@@ -2403,20 +2614,45 @@ h1.title{
                     width: 100%;
                 }
             }
+
+            @media @phone{
+                margin-top: 20px;
+            }
         }
 
         &--reserve{
             .collection-item__image{
                 order: 2;
+
+                @media @phone{
+                    order: unset;
+                }
             }
             .collection-item__info{
                 order: 1;
+
+                @media @phone{
+                    order: unset;
+                }
             }
         }
 
         &:hover{
             opacity: 0.5;
             transition: 0.2s all;
+        }
+
+        @media @phone{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        &:first-child{
+            .collection-item-info__title{
+                @media @phone {
+                    border-top: 0;
+                }
+            }
         }
     }
 
@@ -2428,6 +2664,12 @@ h1.title{
             color: #181818;
             padding-top: 19px;
             border-top: 1px solid rgba(24, 24, 24, 0.5);
+
+            @media @phone{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 18px;
+            }
         }
 
         &__content{
@@ -2438,6 +2680,12 @@ h1.title{
             opacity: 0.8;
             margin-top: 10px;
             max-width: 450px;
+
+            @media @phone{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+            }
         }
 
         &__link{
@@ -2460,6 +2708,10 @@ h1.title{
                     border: 1px solid #868686;
                 }
 
+            }
+
+            @media @phone{
+                margin-top: 15px;
             }
         }
     }
@@ -2680,6 +2932,11 @@ h1.title{
         line-height: 140%;
         color: #181818;
         opacity: 0.8;
+
+        @media @phone{
+            font-weight: 400;
+            font-size: 14px;
+        }
     }
 
     .p-table-wrapper{
@@ -2702,6 +2959,10 @@ h1.title{
             margin-top: 10px;
             position: absolute;
             width: 100%;
+
+            @media @phone{
+                position: static;
+            }
         }
 
         &__row{
@@ -2711,6 +2972,9 @@ h1.title{
                 padding-top: 10px;
                 padding-bottom: 10px;
                 border-top: 1px solid rgba(134, 134, 134, 0.3);
+                @media @phone{
+                    border-top: none;
+                }
             }
 
             &--head{
@@ -2721,6 +2985,14 @@ h1.title{
                     color: #181818;
                     border-top:none;
                 }
+                @media @phone{
+                    display: none !important;
+                }
+            }
+            
+            @media @phone{
+                display: block;
+                position: relative;
             }
         }
 
@@ -2733,6 +3005,12 @@ h1.title{
                 font-size: 18px;
                 line-height: 100%;
                 color: #181818;
+
+                @media @phone{
+                    position: absolute;
+                    bottom: 90px;
+                    left: 90px;
+                }
             }
 
             .table-qty{
@@ -2781,13 +3059,34 @@ h1.title{
                 color: #181818;
                 opacity: 0.9;
                 margin-left: 15px;
+
+                @media @phone{
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+
+            @media @phone{
+                max-width: 260px;
+                align-items: unset;
             }
         }
     }
 
     .product-actions{
+        @media @phone{
+            display: block;
+            height: 80px;
+        }
+
         &__btn{
             float: right;
+
+            @media @phone{
+                width: 100%;
+                float: none;
+                position: absolute;
+            }
         }
         &__close{
             transition: 0.2s all;
@@ -2801,6 +3100,12 @@ h1.title{
             &:hover{
                 transition: 0.2s all;
                 opacity: 0.5;
+            }
+
+            @media @phone{
+                position: absolute;
+                top: -15px;
+                right: -10px;
             }
         }
     }
@@ -2827,6 +3132,11 @@ h1.title{
             line-height: 120%;
             text-transform: uppercase;
             color: #181818;
+
+            @media @phone{
+                font-weight: 400;
+                font-size: 16px;
+            }
         }
     }
 
@@ -2840,6 +3150,12 @@ h1.title{
             line-height: 120%;
             text-transform: uppercase;
             color: #181818;
+        }
+
+        @media @phone{
+            flex-direction: column;
+            justify-content: left;
+            text-align: left;
         }
     }
 
@@ -2856,6 +3172,11 @@ h1.title{
         &:hover{
             transition: 0.2s all;
             opacity: 0.5;
+        }
+
+        @media @phone{
+            font-weight: 400;
+            font-size: 14px;
         }
     }
 
@@ -2882,12 +3203,25 @@ h1.title{
 
         &__btn{
             margin:0 0 0 35px;
+
+            @media @phone{
+                margin: 0;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media @phone{
+            flex-direction: column-reverse;
         }
     }
 }
 
 .table-bottom-coupon{
     position: relative;
+
+    @media @phone{
+        margin-bottom: 20px;
+    }
 
     &__input{
         background: #F9F9F9;
@@ -2897,6 +3231,10 @@ h1.title{
         padding-left: 15px;
         padding-right: 50px;
         outline: none;
+
+        @media @phone{
+            width: 100%;
+        }
     }
 
     &__btn{
@@ -2929,6 +3267,11 @@ h1.title{
                 line-height: 115%;
                 text-transform: uppercase;
                 color: #181818;
+
+                @media @phone{
+                    font-weight: 400;
+                    font-size: 20px;
+                }
             }
 
             &__type{
@@ -2938,6 +3281,11 @@ h1.title{
                 text-transform: uppercase;
                 color: #181818;
                 margin-top: 30px;
+
+                @media @phone{
+                    font-weight: 400;
+                    font-size: 16px;
+                }
             }
 
             .checkout-content-fields{
@@ -2959,6 +3307,11 @@ h1.title{
                         padding-left: 20px;
                         outline: none;
                         border:1px solid rgba(24, 24, 24, 0.2);
+
+                        @media @phone{
+                            font-weight: 400;
+                            font-size: 16px;
+                        }
                     }
 
                     &__textarea{
@@ -2973,6 +3326,11 @@ h1.title{
                         width: 100%;
                         height: 110px;
                         border:1px solid rgba(24, 24, 24, 0.2);
+
+                        @media @phone{
+                            font-weight: 400;
+                            font-size: 16px;
+                        }
                     }
                 }
             }
@@ -3015,6 +3373,11 @@ h1.title{
                     line-height: 100%;
                     color: #181818;
                     opacity: 0.9;
+
+                    @media @phone{
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
                 }
 
                 &__text{
@@ -3026,6 +3389,11 @@ h1.title{
                     max-width: 450px;
                     margin-top: 15px;
                     margin-bottom: 10px;
+
+                    @media @phone{
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
                 }
 
                 &__dop{
@@ -3087,6 +3455,11 @@ h1.title{
                     line-height: 115%;
                     color: #181818;
                     margin-bottom: 17px;
+
+                    @media @phone{
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
                 }
 
                 &__qty{
@@ -3138,10 +3511,25 @@ h1.title{
         &__btn{
             margin: 0 15px 0 0;
             border: 1px solid #BAA391;
+
+            @media @phone{
+                margin: 0;
+            }
+
+            &:first-child{
+                @media @phone{
+                    margin-bottom: 10px;
+                }
+            }
         }
 
         @media @notebook{
             grid-gap: 30px;
+        }
+
+        @media @phone{
+            display: flex;
+            flex-direction: column-reverse;
         }
     }
 
@@ -3149,6 +3537,10 @@ h1.title{
         display: flex;
         align-items: center;
         margin-top: 50px;
+        
+        @media @phone{
+            flex-direction: column;
+        }
     }
 }
 
@@ -3186,3 +3578,12 @@ h1.title{
 
 /* EXCLUSIVE PAGE */
 @import "exclusive";
+
+
+.page-cart,
+.page-thank-you
+{
+    .product-table .product-actions{
+        height: unset;
+    }
+}
