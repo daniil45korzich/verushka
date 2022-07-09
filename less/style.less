@@ -339,6 +339,10 @@ h1.title{
         text-align: center;
         color: #000000;
         cursor: pointer;
+
+        @media @phone{
+            margin-bottom: 30px;
+        }
     }
 
     .pagination-list{
@@ -375,6 +379,17 @@ h1.title{
                 }
             }
         }
+
+        @media @phone{
+            justify-content: center;
+        }
+    }
+
+    @media @phone{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
 }
 
@@ -937,6 +952,12 @@ h1.title{
             color: #181818;
             margin-top: 15px;
             display: block;
+
+            @media @phone{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+            }
         }
 
         &__description{
@@ -946,6 +967,11 @@ h1.title{
             color: #868686;
             margin-top: 5px;
             max-width: 213px;
+
+            @media @phone{
+                font-size: 10px;
+                line-height: 11px;
+            }
         }
 
         &__price{
@@ -954,10 +980,22 @@ h1.title{
             font-size: 18px;
             line-height: 100%;
             color: #181818;
+
+            @media @phone{
+                font-weight: 400;
+                font-size: 16px;
+            }
         }
 
         &__btn{
             margin-top:15px;
+
+            .btn-buy{
+                @media @phone{
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+            }
         }
     }
 
@@ -1753,11 +1791,23 @@ h1.title{
     grid-gap:20px;
     grid-template-columns: 1fr 895px;
 
+    &__menu{
+        @media @phone{
+            display: none;
+        }
+    }
+
     .products{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-row-gap: 40px;
         grid-column-gap: 20px;
+
+        @media @phone{
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: 20px;
+            grid-column-gap: 10px;
+        }
     }
 
     &__pagination{
@@ -1766,6 +1816,12 @@ h1.title{
 
     @media @notebook{
         grid-template-columns: 1fr 3fr;
+    }
+    
+    @media @phone{
+        display: block;
+        gap: 0;
+        grid-gap: 0;
     }
 }
 
@@ -3586,4 +3642,8 @@ h1.title{
     .product-table .product-actions{
         height: unset;
     }
+}
+
+.mobile-hidden{
+    display: none;
 }
