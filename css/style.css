@@ -3982,11 +3982,47 @@ h1.title {
 .banner-mobi .swiper-slide img {
   width: 100%;
 }
+.banner-mobi .banner-mobi-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
 .banner-mobi .banner-mobi-content__text {
   font-weight: 400;
   font-size: 48px;
   line-height: 100%;
   color: #F4F4F4;
+  width: 100%;
+  margin: 130px auto 0px;
+  text-align: center;
+}
+.banner-mobi .banner-mobi-pagination {
+  position: absolute;
+  bottom: 40px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+.banner-mobi .banner-mobi-pagination .swiper-pagination-bullet {
+  background: #FFFFFF;
+}
+.banner-mobi .bannerSlider__link {
+  bottom: 100px;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+.banner-mobi .bannerSlider__link .link-btn__name {
+  color: #F4F4F4;
+}
+.banner-mobi .bannerSlider__link .link-arrow__self path {
+  fill: #F4F4F4;
+}
+.banner-mobi .bannerSlider__link .link-arrow__circle {
+  border: 1px solid #F4F4F4;
 }
 @media screen and (max-width: 1020px) {
   .banner {
